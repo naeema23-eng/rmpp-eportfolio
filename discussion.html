@@ -1,38 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Discussion – Codes of Ethics & Professional Conduct</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6} nav a{margin-right:10px} hr{margin:16px 0} h1,h2{line-height:1.2}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discussion (Units 1–3) – Codes of Ethics & Professional Conduct</title>
 </head>
-<body>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="discussion.html">Discussion</a> |
-    <a href="reflective-activity-1.html">Reflective Activity 1</a> |
-    <a href="stats.html">Statistics</a> |
-    <a href="proposal-eval.html">Proposal Evaluation</a> |
-    <a href="reflection.html">Final Reflection</a>
-  </nav>
-  <hr>
+<body style="font-family:Arial, sans-serif; line-height:1.6; max-width:900px; margin:auto; padding:20px;">
 
-  <h1>Discussion (Units 1–3): Codes of Ethics & Professional Conduct</h1>
+<p>
+  <a href="index.html">Home</a> |
+  <a href="discussion.html">Discussion (Units 1–3)</a> |
+  <a href="reflective-activity-1.html">Reflective Activity 1</a> |
+  <a href="stats.html">Statistics Artefacts</a> |
+  <a href="proposal-eval.html">Lit Review & Proposal Evaluation</a> |
+  <a href="reflection.html">Final 1,000-word Reflection</a>
+</p>
+<hr>
 
-  <h2>Initial Post</h2>
-  <p><strong>Title:</strong> Data Breach at a Medical Database (ACM Case Study)</p>
-  <!-- Paste your final initial post text here, including references list. -->
+<h1>Discussion: Codes of Ethics & Professional Conduct</h1>
 
-  <h2>Peer Response 1</h2>
-  <!-- Paste full Peer Response 1 + references here. -->
+<h2>Initial Post</h2>
 
-  <h2>Peer Response 2</h2>
-  <!-- Paste full Peer Response 2 + references here. -->
+<p>
+A hospital’s database breach is not only a security failure but an ethical collapse with legal, social, and professional consequences—especially when downstream AI systems may learn from, or be audited against, compromised data. Under the ACM Code of Ethics (2018), the organisation and its computing professionals failed to avoid harm (1.2) and respect privacy (1.6) due to inadequate safeguards and delayed disclosure. Principle 2.5 also requires thorough evaluation of risks and impacts, including robust pre-breach assessment and transparent post-breach response.
+</p>
 
-  <h2>Peer Response 3</h2>
-  <!-- Paste full Peer Response 3 + references here. -->
+<p>
+The BCS Code of Conduct (2021) similarly requires acting in the public interest and upholding privacy, security, and wellbeing (Clause 1a), while Clause 2 emphasises competence and integrity. Research shows that health-data breaches amplify social harms such as re-identification, stigma, or discriminatory decision-making (Shen and Ma, 2022). If leaked datasets are reused in AI training, they may embed structural bias or distort predictions (Mehrabi et al., 2021), contradicting ACM 1.4 (fairness) and BCS non-discrimination expectations.
+</p>
 
-  <h2>Summary Post (Units 1–3)</h2>
-  <!-- Paste your final summary post + references here. -->
+<p>
+Legally, GDPR Articles 33–34 mandate timely breach notification to authorities and affected individuals. Violating these duties reflects weak professional governance. As Soomro, Shah and Ahmed (2020) argue, many breaches arise from organisational deficiencies—poor controls, weak accountability, and insufficient risk management—not technical errors alone.
+</p>
+
+<p>
+Following module guidance, this case demonstrates the chain:<br>
+<strong>Professional lapse → Legal breach → Social harm.</strong><br>
+In healthcare, this chain is intensified because trust is essential for safe digital health and ethical AI innovation.
+</p>
+
+<p>
+To align with ACM/BCS expectations, organisations should adopt:<br>
+(i) privacy-by-design and security-by-design approaches<br>
+(ii) tested breach-response procedures<br>
+(iii) independent audits and bias/impact assessments before AI reuse of clinical data<br>
+(iv) transparent communication to rebuild public and patient trust.
+</p>
+
+<h4>References</h4>
+<ul>
+<li>ACM (2018) <em>ACM Code of Ethics and Professional Conduct.</em> Available at: <a href="https://www.acm.org/code-of-ethics">https://www.acm.org/code-of-ethics</a> (Accessed: 12 November 2025).</li>
+<li>BCS (2021) <em>Code of Conduct.</em> British Computer Society. Available at: <a href="https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/">https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/</a> (Accessed: 12 November 2025).</li>
+<li>Corrêa, N.K. et al. (2023) ‘Worldwide AI ethics: A review of 200 guidelines’, <em>Patterns,</em> 4(10), 100857.</li>
+<li>European Parliament and Council (2016) <em>General Data Protection Regulation (EU) 2016/679.</em> Available at: <a href="https://gdpr.eu/">https://gdpr.eu/</a> (Accessed: 12 November 2025).</li>
+<li>Mehrabi, N. et al. (2021) ‘A survey on bias and fairness in machine learning’, <em>ACM Computing Surveys,</em> 54(6), pp. 1–35.</li>
+<li>Shen, N. and Ma, J. (2022) ‘Ethical challenges in protecting health information in the digital era’, <em>Journal of Medical Systems,</em> 46(3), pp. 1–12.</li>
+<li>Soomro, Z.A., Shah, M.H. and Ahmed, J. (2020) ‘Information security management needs more holistic approaches’, <em>International Journal of Information Management,</em> 51, 102056.</li>
+</ul>
+
+<hr>
+
+<h2>Peer Response 1 – Reply to Nikolaos</h2>
+
+<p>
+Hi Nikolaos, excellent analysis. I strongly agree that preserving a corrupted model after evidence of targeted manipulation breaches ACM 1.2 (avoid harm) and BCS Public Interest responsibilities. What you describe reflects a classic case of data poisoning within a human-in-the-loop feedback loop. Beyond bias mitigation, professional competence (ACM 2.2; BCS Clause 2) requires engineering adversarial resilience—such as gated feedback channels, anomaly detection on label patterns, and rollback procedures when poisoning or drift is detected.
+</p>
+
+<p>
+Your transparency point can also be framed as accountability by design: documenting known limitations, publishing model cards or change logs, and enabling stakeholders (e.g., parents, schools, civil-society organisations) to contest errors. This aligns with the EU Trustworthy AI guidelines emphasising human oversight and traceability.
+</p>
+
+<p>
+Fairness also needs measurable thresholds. Monitoring false-positive rates across protected groups and enforcing go/no-go deployment criteria strengthens both ACM 1.4 and BCS expectations around non-discrimination. When thresholds fail, ethics and engineering teams should co-sign remediation steps before redeployment.
+</p>
+
+<p>
+A final question for you: should independent red-team audits be mandatory before content-moderation systems for minors are deployed—and should this be enforced by ACM/BCS disciplinary bodies or by statutory law?
+</p>
+
+<h4>References</h4>
+<ul>
+<li>ACM (2018) <em>ACM Code of Ethics and Professional Conduct.</em> Available at: <a href="https://www.acm.org/code-of-ethics">https://www.acm.org/code-of-ethics</a> (Accessed: 12 November 2025).</li>
+<li>BCS (2021) <em>Code of Conduct.</em> British Computer Society. Available at: <a href="https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/">https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/</a> (Accessed: 12 November 2025).</li>
+<li>European Commission High-Level Expert Group on AI (2019) <em>Ethics Guidelines for Trustworthy AI.</em> Brussels.</li>
+<li>Fjeld, J. et al. (2020) <em>Principled Artificial Intelligence.</em> Cambridge, MA: Berkman Klein Center.</li>
+</ul>
+
+<hr>
+
+<h2>Peer Response 2 – Reply to Nelson</h2>
+
+<p>
+Hi Nelson, strong and clear analysis. You rightly show that releasing an inaccessible feature violates ACM principles 1.1, 1.2, 1.3 and 1.4, as well as the BCS duty to act in the public interest and prevent discrimination. Your point regarding the Equality Act 2010 is crucial: accessibility is not optional, and neglecting it constitutes unlawful discrimination.
+</p>
+
+<p>
+To extend your argument, research shows that accessibility failures often arise from organisational governance gaps, not just scheduling pressures. El Morr et al. (2024) find that many developers lack accessibility training, meaning violations are not identified early. This reflects a structural ethical issue: failing to meet ACM 2.3 (respect rules) and BCS Clause 2 (competence) because teams simply do not have embedded accessibility practices.
+</p>
+
+<p>
+Furthermore, accessibility maturity research (Lazar, Goldstein and Taylor, 2017) shows that embedding accessibility from the start significantly reduces cost, risk, and harm, while improving innovation. This positions accessibility as a core ethical requirement, not a late technical fix.
+</p>
+
+<p>
+Your post effectively connects ethical, social, and legal consequences. Reinforcing accessibility as a governance requirement would protect users and strengthen professional integrity across the software lifecycle.
+</p>
+
+<h4>References</h4>
+<ul>
+<li>BCS (2023) <em>Code of Conduct.</em> British Computer Society. Available at: <a href="https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/">https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/</a> (Accessed: 12 November 2025).</li>
+<li>El Morr, C. et al. (2024) ‘Exploring the intersection of AI and inclusive design for people with disabilities’, <em>Studies in Health Technology and Informatics,</em> 316, pp. 556–559.</li>
+<li>Horton, S. (2025) <em>Accessibility in Software Development: Case Study.</em> ACM.</li>
+<li>Lazar, J., Goldstein, D.F. and Taylor, A. (2017) <em>Ensuring Digital Accessibility Through Process and Policy.</em> CRC Press.</li>
+<li>Shneiderman, B. (2020) <em>Designing the User Interface: Strategies for Effective Human-Computer Interaction.</em> 6th edn. Pearson.</li>
+</ul>
+
+<hr>
+
+<h2>Peer Response 3 – Reply to Ali</h2>
+
+<p>
+Hi Ali, your post provides a clear overview of the ethical duties breached in the Data Breach at a Medical Database case, especially around ACM Principles 1.2 (Avoid Harm) and 1.6 (Respect Privacy). I agree that delayed disclosure is not just a technical failure but a fundamental breach of professional accountability. I’d like to build on your argument by expanding the connection between organisational governance, AI implications, and enforceable accountability.
+</p>
+
+<p>
+Recent research shows that in healthcare, breaches often occur not because organisations lack cybersecurity tools, but because they lack governance structures that enforce ethical decision-making and rapid incident response (Soomro, Shah and Ahmed, 2020). This reinforces your point that inactivity itself becomes unethical: when organisations delay breach reporting, they violate both ACM Principle 2.5 (thorough evaluations of computer systems and their impacts) and BCS Clause 1a (due regard for privacy, safety, and wellbeing).
+</p>
+
+<p>
+Your argument about downstream AI risks is particularly important. Compromised medical datasets—if later used for clinical prediction models—can embed bias, distort risk scoring, or result in unsafe automated decisions. Mehrabi et al. (2021) emphasise that AI systems trained on tainted or incomplete data can cause discriminatory or unsafe outcomes, which directly contradicts ACM 1.4 (fairness) and BCS expectations around non-discrimination.
+</p>
+
+<p>
+I would also add that GDPR’s 72-hour notification rule (Article 33) is not only a legal obligation but also an ethical safeguard designed to minimise harm. When organisations fail to report promptly, individuals lose the opportunity to protect themselves—for example by changing passwords, monitoring financial accounts, or alerting healthcare providers.
+</p>
+
+<p>
+One question for you: given the rising frequency of healthcare breaches, do you think mandatory independent cybersecurity audits should be required for all organisations handling clinical data, and should failure to comply trigger BCS/ACM disciplinary action?
+</p>
+
+<h4>References</h4>
+<ul>
+<li>BCS (2024) <em>BCS Code of Conduct.</em> British Computer Society. Available at: <a href="https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/">https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/</a> (Accessed: 12 November 2025).</li>
+<li>European Parliament and Council (2016) <em>General Data Protection Regulation (EU 2016/679).</em> Available at: <a href="https://gdpr.eu/">https://gdpr.eu/</a> (Accessed: 12 November 2025).</li>
+<li>Mehrabi, N. et al. (2021) ‘A survey on bias and fairness in machine learning’, <em>ACM Computing Surveys,</em> 54(6), pp. 1–35.</li>
+<li>Soomro, Z.A., Shah, M.H. and Ahmed, J. (2020) ‘Information security management needs more holistic approaches: a review’, <em>International Journal of Information Management,</em> 51, 102056.</li>
+</ul>
+
+<hr>
+
+<h2>Summary Post – Units 1–3</h2>
+
+<p>
+Over the three-unit discussion, our exploration of professional, legal, social, and ethical responsibilities in computing revealed a central theme: the gap between ethical intention and enforceable accountability. Using the ACM and BCS Codes of Conduct as ethical anchors, we examined how computing professionalism extends beyond compliance to moral stewardship—particularly in sensitive areas such as healthcare AI, data protection, and inclusive design.
+</p>
+
+<p>
+In my initial post on the ACM Case Study: Data Breach at a Medical Database, I analysed how failure to disclose patient-data breaches violates ACM Principles 1.2 (avoid harm) and 1.6 (respect privacy), as well as GDPR Articles 33–34. The case demonstrated that ethical negligence in digital-health systems can quickly escalate into legal and social harm, eroding public trust.
+</p>
+
+<p>
+In peer responses, I engaged with cases such as Blocker Plus, Accessibility in Software Development, and Data Breach Ethics, which echoed similar concerns. Nikolaos’s analysis of algorithmic bias underscored that ethics must move beyond bias mitigation toward adversarial resilience and accountability by design. Nelson’s case highlighted that overlooking accessibility constitutes both a professional and moral failure. Ali’s case reinforced the necessity of combining technical innovation with ethical governance and transparent reporting.
+</p>
+
+<p>
+Across all discussions, three insights emerged:<br>
+<strong>Professional:</strong> Ethical competence requires proactive governance, transparency, and continuous auditing.<br>
+<strong>Legal:</strong> Frameworks such as GDPR and the Equality Act 2010 convert ethical duties into enforceable obligations.<br>
+<strong>Social:</strong> Inclusive and privacy-preserving systems protect fairness, dignity, and public trust.
+</p>
+
+<p>
+Ultimately, the discussion affirmed that ethical codes alone are insufficient without institutional accountability. Computing professionals must act as both innovators and moral stewards—ensuring technology advances human well-being, equity, and justice.
+</p>
+
+<h4>References</h4>
+<ul>
+<li>ACM (2018) <em>ACM Code of Ethics and Professional Conduct.</em> Available at: <a href="https://www.acm.org/code-of-ethics">https://www.acm.org/code-of-ethics</a> (Accessed: 12 November 2025).</li>
+<li>BCS (2021) <em>Code of Conduct.</em> British Computer Society. Available at: <a href="https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/">https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/</a> (Accessed: 12 November 2025).</li>
+<li>Corrêa, N.K. et al. (2023) ‘Worldwide AI ethics: A review of 200 guidelines’, <em>Patterns,</em> 4(10), 100857.</li>
+<li>Fjeld, J. et al. (2020) <em>Principled Artificial Intelligence.</em> Cambridge, MA: Berkman Klein Center.</li>
+<li>Lazar, J., Goldstein, D.F. and Taylor, A. (2017) <em>Ensuring Digital Accessibility Through Process and Policy.</em> Boca Raton: CRC Press.</li>
+<li>Mehrabi, N. et al. (2021) ‘A survey on bias and fairness in machine learning’, <em>ACM Computing Surveys,</em> 54(6), pp. 1–35.</li>
+<li>Shen, N. and Ma, J. (2022) ‘Ethical challenges in protecting health information in the digital era’, <em>Journal of Medical Systems,</em> 46(3), pp. 1–12.</li>
+<li>Soomro, Z.A., Shah, M.H. and Ahmed, J. (2020) ‘Information security management needs more holistic approaches: a review’, <em>International Journal of Information Management,</em> 51, 102056.</li>
+</ul>
+
 </body>
 </html>
