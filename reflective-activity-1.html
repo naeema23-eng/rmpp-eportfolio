@@ -1,23 +1,272 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PAGE TITLE HERE</title>
+  <title>Reflective Activity 1 – Ethics in Computing in the Age of Generative AI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6} nav a{margin-right:10px} hr{margin:16px 0}</style>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      margin: 40px auto 60px;
+      max-width: 900px;
+      line-height: 1.6;
+      padding: 0 16px;
+      color: #111827;
+    }
+    h1, h2, h3 {
+      color: #0f172a;
+    }
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      margin-top: 1.8rem;
+      font-size: 1.25rem;
+    }
+    h3 {
+      margin-top: 1.2rem;
+      font-size: 1.05rem;
+    }
+    a { color: #1d4ed8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { margin: 1.2rem 0; border: 0; border-top: 1px solid #e5e7eb; }
+    .meta { font-size: 0.9rem; color: #4b5563; }
+    ul { margin-left: 1.4rem; }
+    li { margin: 0.3rem 0; }
+    .callout {
+      background: #f9fafb;
+      border-left: 4px solid #0ea5e9;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="discussion.html">Discussion</a> |
-    <a href="reflective-activity-1.html">Reflective Activity 1</a> |
-    <a href="stats.html">Statistics</a> |
-    <a href="proposal-eval.html">Proposal Evaluation</a> |
-    <a href="reflection.html">Final Reflection</a>
-  </nav>
-  <hr>
 
-  <h1>PAGE TITLE HERE</h1>
-  <p>Content to be added.</p>
+<p>
+  <a href="index.html">Home</a> |
+  <a href="discussion.html">Discussion (Units 1–3)</a> |
+  <strong>Reflective Activity 1</strong> |
+  <a href="stats.html">Statistics Artefacts (Units 8–9)</a> |
+  <a href="proposal-eval.html">Lit Review &amp; Proposal Evaluation</a> |
+  <a href="reflection.html">Final 1,000-word Reflection</a>
+</p>
+
+<hr>
+
+<h1>Reflective Activity 1 – Ethics in Computing in the Age of Generative AI</h1>
+<p class="meta">
+  Author: Naeema Abdalla Ahmed Alnaqbi &nbsp;|&nbsp;
+  Programme: MSc Artificial Intelligence &nbsp;|&nbsp;
+  Word count: ~1,000
+</p>
+
+<h2>What – Context and focus</h2>
+
+<p>
+Since late 2022, generative AI (GenAI) tools have moved from research labs into everyday life. 
+They now write code, draft emails, summarise medical articles and generate realistic images. 
+As Correa et al. (2023) show, this rapid adoption has triggered a wave of more than 200 AI 
+ethics guidelines worldwide, but these documents differ in scope, terminology and legal force. 
+Deckard (2023) adds that organisations face strong pressure to “move fast” with GenAI to gain 
+competitive advantage, even when governance structures are still immature.
+</p>
+
+<p>
+For computing professionals, this raises a simple but difficult question: 
+<strong>how can we use GenAI responsibly when global norms are fragmented and the technology is still evolving?</strong> 
+In this reflection I draw on Correa et al. (2023), Deckard (2023), and professional codes 
+such as ACM (2018) and BCS (2021, 2024) to develop my own view. I also connect the discussion 
+to my background as a biomedical engineer and AI student who is particularly interested in 
+healthcare and human physiology.
+</p>
+
+<h2>So what – Analysis and position</h2>
+
+<h3>1. Fragmented principles and the need for enforceable baselines</h3>
+
+<p>
+Correa et al. (2023) show that most AI ethics documents repeat similar high-level values 
+– fairness, transparency, accountability, privacy, human oversight – but differ on how 
+to implement or enforce them. Many guidelines are voluntary and lack mechanisms for 
+monitoring or sanctions. I see a risk that GenAI becomes governed by “ethics washing”: 
+beautiful principles with little impact on practice.
+</p>
+
+<p>
+From my perspective, a more convincing approach is layered. Global and regional frameworks
+(e.g. OECD principles, EU AI Act, GDPR) should define <em>minimum, enforceable</em> baselines 
+for safety, transparency and data protection. Professional bodies such as ACM and BCS 
+should translate these into expectations for individual conduct (competence, integrity, 
+duty to the public). Finally, organisations must convert all of this into concrete policies, 
+risk registers and technical controls inside their software development life cycle.
+</p>
+
+<h3>2. Risk-tiered governance rather than one-size-fits-all rules</h3>
+
+<p>
+Not every GenAI system has the same potential for harm. A brainstorming assistant for
+marketing copy is very different from a model that helps clinicians prioritise patients 
+or predicts mental-health risk from text. I agree with Correa et al. (2023) that ethical 
+guidance should be sensitive to context. In practice I support a <strong>risk-tiered model</strong>:
+low-risk applications may rely on lightweight safeguards, whereas high-risk uses require
+formal impact assessments, red-teaming, domain expert review, and ongoing monitoring.
+</p>
+
+<p>
+This approach matches my own experience in healthcare technology, where risk classification 
+already determines the depth of testing and documentation. Extending this logic to GenAI 
+would link ethical concerns to concrete engineering practices such as evaluation datasets, 
+fail-safe design and incident reporting.
+</p>
+
+<h3>3. Data governance, privacy and security</h3>
+
+<p>
+Many GenAI harms begin in the data pipeline rather than in the model itself. 
+Training on scraped data without clear consent or licensing raises questions under 
+data protection and intellectual property law. Using patient information with public 
+cloud models can directly violate confidentiality rules. As someone working in the 
+health sector, I find this aspect particularly sensitive.
+</p>
+
+<p>
+I believe responsible GenAI requires strong data governance: clear legal bases for processing, 
+purpose limitation, data minimisation, and robust security controls. Where models are trained 
+or fine-tuned on personal data, organisations should conduct Data Protection Impact Assessments
+and ensure that outputs cannot easily re-identify individuals. This links directly to GDPR 
+requirements and to ACM principles 1.2 (avoid harm) and 1.6 (respect privacy).
+</p>
+
+<h3>4. Professional competence and honest use of GenAI</h3>
+
+<p>
+Correa et al. (2023) highlight that many guidelines are aspirational, but Deckard (2023) stresses 
+that successful GenAI adoption depends on real organisational capability. For individual computing 
+professionals, competence now includes understanding GenAI’s limitations: hallucinations, bias, 
+prompt injection, misuse of training data, and the need for human oversight.
+</p>
+
+<p>
+In my own studies I already rely on GenAI tools to brainstorm ideas and polish writing, 
+but this activity made me think more critically about transparency and academic integrity. 
+I must clearly distinguish between my own analysis and AI-generated suggestions, and always 
+acknowledge sources correctly. Professionally, I see a similar responsibility: engineers 
+should document how GenAI was used in design or documentation and avoid presenting AI output 
+as unquestionable truth.
+</p>
+
+<h3>5. Human and physiological perspective</h3>
+
+<p>
+As a biomedical engineer, I cannot ignore the human body behind the data. Physiological signals, 
+clinical notes and mental-health assessments are deeply personal. If GenAI is used to analyse 
+such data – for example predicting deterioration in an ambulance or generating patient 
+information leaflets – errors can harm both physical and emotional wellbeing.
+</p>
+
+<p>
+My long-term goal is to integrate AI with healthcare in ways that support clinicians rather 
+than replace them. This reflection reinforced the importance of <strong>human-centred design</strong>: 
+interfaces that are understandable to patients, explanations that match their emotional state, 
+and workflows that keep clinicians in control. GenAI can be a powerful assistant, but only if 
+we design around human limits, including cognitive overload and stress.
+</p>
+
+<div class="callout">
+  <strong>My position:</strong> Generative AI should be governed through risk-tiered, enforceable
+  frameworks that combine global principles, local law, professional codes and concrete
+  engineering practices. Data governance and human-centred design are as important as
+  model performance.
+</div>
+
+<h2>Now what – Recommended course of action and impacts</h2>
+
+<p>
+If I had to recommend a practical course of action for governments, industry and professionals,
+it would include the following steps:
+</p>
+
+<ul>
+  <li>
+    <strong>Adopt clear GenAI policies and risk registers</strong> in organisations, linking each
+    use case to purpose, lawful basis, data categories and risk tier.
+  </li>
+  <li>
+    <strong>Require impact assessments and red-team testing</strong> for medium and high-risk
+    applications, especially in health, education, employment and policing.
+  </li>
+  <li>
+    <strong>Mandate transparency mechanisms</strong> such as model cards, change logs, 
+    and clear labelling of AI-generated content.
+  </li>
+  <li>
+    <strong>Strengthen professional education</strong> so that computing practitioners understand
+    GenAI failure modes, legal obligations and ethical reasoning, not just technical skills.
+  </li>
+  <li>
+    <strong>Include diverse stakeholders</strong> – patients, disabled users, marginalised groups –
+    in the design and evaluation of GenAI systems.
+  </li>
+</ul>
+
+<p>
+Legally, these steps help organisations demonstrate compliance with data protection and
+consumer protection laws and with sector-specific regulations in healthcare. Socially, 
+they can reduce bias, improve accessibility and preserve public trust. Professionally, 
+they align with ACM and BCS duties to act in the public interest, maintain competence, 
+and be honest about system limitations.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+This activity moved my thinking from “GenAI is exciting and powerful” to a more nuanced view: 
+GenAI is also fragile, highly context-dependent and deeply entangled with law, society 
+and human bodies. Reading Correa et al. (2023) made me appreciate how fragmented global 
+AI governance currently is, while Deckard (2023) emphasised that uncritical adoption is 
+strategically risky. As I continue my MSc and future work in AI-enabled healthcare, 
+I want to be the kind of professional who can translate ethical principles into 
+practical decisions: asking “who might be harmed?”, “what data are we really using?” 
+and “how can we design this so a stressed clinician or patient can still understand it?”. 
+For me, that is what ethics in the age of generative AI truly means.
+</p>
+
+<h2>References (Harvard style)</h2>
+
+<ul>
+  <li>
+    ACM (2018) <em>ACM Code of Ethics and Professional Conduct</em>. 
+    Available at: https://www.acm.org/code-of-ethics (Accessed: 12 November 2025).
+  </li>
+  <li>
+    BCS (2021) <em>Code of Conduct</em>. British Computer Society. 
+    Available at: https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/ 
+    (Accessed: 12 November 2025).
+  </li>
+  <li>
+    BCS (2024) <em>BCS Code of Conduct</em>. British Computer Society. 
+    (Use the most recent version cited in your module materials).
+  </li>
+  <li>
+    Correa, N.K., Galvão, C., Santos, J.W. <em>et al.</em> (2023) 
+    ‘Worldwide AI ethics: A review of 200 guidelines and recommendations for AI governance’, 
+    <em>Patterns</em>, 4(10), 100857.
+  </li>
+  <li>
+    Deckard, B. (2023) ‘Executive considerations for adopting generative AI responsibly’, 
+    <em>Industry white paper</em>. 
+    (Replace this line with the full reference details provided in your reading list).
+  </li>
+  <li>
+    European Parliament and Council (2016) 
+    <em>General Data Protection Regulation (EU) 2016/679</em>. 
+    Available at: https://gdpr.eu/ (Accessed: 12 November 2025).
+  </li>
+</ul>
+
 </body>
 </html>
