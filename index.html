@@ -1,218 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>RM&PP e-Portfolio – Naeema Alnaqbi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Methods & Professional Practice – e-Portfolio</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f5f7fb;
-            color: #222;
-        }
-
-        header {
-            background: #1f3b70;
-            color: #fff;
-            padding: 1.8rem 1.5rem;
-        }
-
-        header h1 {
-            margin: 0 0 0.3rem 0;
-            font-size: 1.6rem;
-        }
-
-        header p {
-            margin: 0.1rem 0;
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
-
-        main {
-            max-width: 960px;
-            margin: 1.5rem auto 2.5rem auto;
-            padding: 0 1rem;
-        }
-
-        .intro-box {
-            background: #ffffff;
-            border-radius: 10px;
-            padding: 1rem 1.2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            border: 1px solid #e4e7f0;
-        }
-
-        .intro-box h2 {
-            margin-top: 0;
-            font-size: 1.15rem;
-        }
-
-        .intro-box p {
-            margin: 0.25rem 0;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 1rem 1.1rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-            border: 1px solid #e1e4ee;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card h3 {
-            margin-top: 0;
-            margin-bottom: 0.4rem;
-            font-size: 1.05rem;
-        }
-
-        .tag {
-            display: inline-block;
-            font-size: 0.78rem;
-            padding: 0.15rem 0.5rem;
-            border-radius: 999px;
-            background: #e7efff;
-            color: #1f3b70;
-            margin-bottom: 0.4rem;
-        }
-
-        .card p {
-            margin: 0.3rem 0 0.6rem 0;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-
-        .card a {
-            align-self: flex-start;
-            text-decoration: none;
-            font-size: 0.9rem;
-            padding: 0.35rem 0.7rem;
-            border-radius: 999px;
-            border: 1px solid #1f3b70;
-            color: #1f3b70;
-        }
-
-        .card a:hover {
-            background: #1f3b70;
-            color: #ffffff;
-        }
-
-        .checklist {
-            background: #ffffff;
-            border-radius: 10px;
-            padding: 1rem 1.2rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            border: 1px solid #e4e7f0;
-        }
-
-        .checklist h2 {
-            margin-top: 0;
-            font-size: 1.1rem;
-        }
-
-        .checklist ul {
-            margin: 0.3rem 0 0 1.1rem;
             padding: 0;
-            font-size: 0.92rem;
+            background: #f7f9fb;
+            color: #333;
         }
-
+        header {
+            background: #133c7a;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        header p {
+            margin: 4px 0 0 0;
+            font-size: 14px;
+        }
+        .container {
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .card-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card-small {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 32%;
+            min-width: 300px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: #133c7a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
         .checklist li {
-            margin-bottom: 0.25rem;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 0.8rem;
-            color: #666;
-            padding: 1rem 0 1.5rem 0;
+            margin-bottom: 6px;
         }
     </style>
 </head>
+
 <body>
+
 <header>
     <h1>Research Methods & Professional Practice – e-Portfolio</h1>
-    <p><strong>Student:</strong> Naeema Alnaqbi</p>
-    <p><strong>Programme:</strong> MSc Artificial Intelligence · University of Essex Online</p>
+    <p><strong>Student:</strong> Naeema Abdalla Ahmed Alnaqbi  
+       &nbsp; | &nbsp;  
+       <strong>Programme:</strong> MSc Artificial Intelligence  
+       &nbsp; | &nbsp;  
+       University of Essex Online
+    </p>
 </header>
 
-<main>
-    <section class="intro-box">
-        <h2>Welcome</h2>
-        <p>
-            This e-portfolio documents my learning journey in the <em>Research Methods and Professional Practice</em> module.
-            It collects key formative activities, reflections, and assessed work that evidence my progress in:
-        </p>
-        <p>
-            • understanding ethical and professional issues in computing<br>
-            • planning and evaluating research (literature review & proposal)<br>
-            • developing statistical analysis skills and reflective practice.
-        </p>
-    </section>
+<div class="container">
 
-    <section>
-        <h2>Key Activities (Units 1–3)</h2>
-        <div class="grid">
-            <article class="card">
-                <span class="tag">Discussion</span>
+    <!-- Welcome Card -->
+    <div class="card">
+        <h2 class="section-title">Welcome</h2>
+        <p>
+            This e-portfolio documents my learning journey in the
+            <em>Research Methods and Professional Practice</em> module.  
+            It collects key formative activities, reflections, and assessed work that show my progress in:
+        </p>
+        <ul>
+            <li>understanding ethical and professional issues in computing</li>
+            <li>planning and evaluating research (literature review & proposal)</li>
+            <li>developing statistical analysis skills and reflective practice</li>
+        </ul>
+    </div>
+
+    <!-- Activities Section -->
+    <div class="card">
+        <h2 class="section-title">Key Activities (Units 1–3)</h2>
+
+        <div class="card-row">
+
+            <!-- Discussion -->
+            <div class="card-small">
+                <strong style="color:#555;">Discussion</strong>
                 <h3>Codes of Ethics & Professional Conduct</h3>
                 <p>
-                    Initial post, three peer responses, and a summary post analysing the ACM “Data Breach at a
-                    Medical Database” case, with comparison to the BCS Code of Conduct.
+                    Initial post, three peer responses, and summary analysis of the ACM “Data Breach at a Medical Database” case, with comparison to BCS Code of Conduct.
                 </p>
-                <a href="discussion-unit1-3.html">View discussion evidence</a>
-            </article>
+                <a class="button" href="discussion.html">View discussion evidence</a>
+            </div>
 
-            <article class="card">
-                <span class="tag">Reflection</span>
+            <!-- Reflection Activity 1 -->
+            <div class="card-small">
+                <strong style="color:#555;">Reflection</strong>
                 <h3>Reflective Activity 1 – Ethics in Computing & Generative AI</h3>
                 <p>
-                    A 1,000-word critical reflection on global AI ethics guidelines, generative AI in computing,
-                    and implications for legal, social, and professional practice.
+                    A 1,000-word critical reflection on global AI ethics guidelines, generative AI, and implications for legal, social, and professional practice.
                 </p>
-                <a href="reflective-activity-1.html">Read reflection</a>
-            </article>
+                <a class="button" href="reflective-activity-1.html">Read reflection</a>
+            </div>
 
-            <article class="card">
-                <span class="tag">Coming later</span>
+            <!-- Coming Soon -->
+            <div class="card-small">
+                <strong style="color:#888;">Coming later</strong>
                 <h3>Literature Review & Research Proposal</h3>
                 <p>
-                    This section will include my literature review, proposal outline, and self-evaluation once
-                    the corresponding units are completed and marked.
+                    This section will include the literature review, proposal outline, and self-evaluation once completed in later units.
                 </p>
-                <!-- You can later change this link when those pages exist -->
-                <a href="#">To be added in later units</a>
-            </article>
-        </div>
-    </section>
+                <a class="button" href="proposal-eval.html">To be added in later units</a>
+            </div>
 
-    <section class="checklist">
-        <h2>Module e-Portfolio Checklist (in progress)</h2>
-        <ul>
+        </div>
+    </div>
+
+    <!-- Checklist -->
+    <div class="card">
+        <h2 class="section-title">Module e-Portfolio Checklist (in progress)</h2>
+        <ul class="checklist">
             <li>✔ Unit 1–3 Discussion: Initial post, peer responses, summary</li>
-            <li>✔ Reflective Activity 1 – Ethics in Computing in the age of Generative AI</li>
+            <li>✔ Reflective Activity 1 – Ethics & Generative AI</li>
             <li>□ Literature Review (final submission) + short self-evaluation</li>
             <li>□ Research Proposal (final submission) + short self-evaluation</li>
             <li>□ Statistics exercises (Units 8–9) and learning reflection</li>
-            <li>□ Final 1,000-word module reflection (Unit 12) and e-portfolio branch for submission</li>
+            <li>□ Final 1,000-word module reflection + e-portfolio branch for submission</li>
         </ul>
-    </section>
-</main>
+    </div>
 
-<footer>
-    &copy; 2025 · Naeema Alnaqbi – RM&PP e-Portfolio
-</footer>
+</div>
+
 </body>
 </html>
