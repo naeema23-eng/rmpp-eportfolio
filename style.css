@@ -156,3 +156,70 @@ h2.page-title {
 
 p {
   line-height: 1.6
+/* ==== Local page navigation (Reflections, etc.) ==== */
+
+.local-nav {
+  margin-bottom: 1.5rem;
+}
+
+.local-nav .page-title {
+  margin-bottom: 0.25rem;
+}
+
+.horizontal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.horizontal-links li a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #f9f4ec; /* soft beige */
+  color: #444;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.horizontal-links li a:hover,
+.horizontal-links li a:focus {
+  background-color: #f1e5d4;
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+/* Back-to-top link */
+
+.back-to-top {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.back-to-top a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #777;
+}
+
+.back-to-top a:hover,
+.back-to-top a:focus {
+  text-decoration: underline;
+  color: #444;
+}
+
+/* Sidebar quick navigation */
+
+.sidebar .card ul.clean a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.sidebar .card ul.clean a:hover,
+.sidebar .card ul.clean a:focus {
+  text-decoration: underline;
+}
