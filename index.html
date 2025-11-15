@@ -1,158 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research Methods & Professional Practice – e-Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f7f9fb;
-            color: #333;
-        }
-        header {
-            background: #133c7a;
-            color: white;
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 26px;
-        }
-        header p {
-            margin: 4px 0 0 0;
-            font-size: 14px;
-        }
-        .container {
-            padding: 30px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-        }
-        .section-title {
-            font-size: 22px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .card-row {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .card-small {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 32%;
-            min-width: 300px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-        }
-        a.button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 14px;
-            background: #133c7a;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-        .checklist li {
-            margin-bottom: 6px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Research Methods &amp; Professional Practice – e-Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --primary: #184a8c;
+      --primary-soft: #e3ecfb;
+      --border: #dde1ea;
+      --text-main: #1f2933;
+      --text-muted: #5f6c80;
+      --pill-bg: #eef2ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    header {
+      background: #0f172a;
+      color: #f9fafb;
+      padding: 1.75rem 1.5rem 1.5rem;
+      margin: -2.5rem -1.5rem 2rem;
+    }
+
+    header h1 {
+      margin: 0 0 0.4rem;
+      font-size: 1.8rem;
+    }
+
+    header .meta {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    /* Top nav */
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 0 -1.5rem 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #020617;
+      border-top: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .nav a {
+      font-size: 0.9rem;
+      color: #e5e7eb;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+    }
+
+    .nav a.active {
+      background: #e5e7eb;
+      color: #020617;
+      font-weight: 600;
+    }
+
+    /* Welcome card */
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 1.5rem 1.75rem;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border);
+    }
+
+    .card + .card {
+      margin-top: 1.25rem;
+    }
+
+    .welcome-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .welcome-list {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    h2.section-title {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.2rem;
+    }
+
+    /* Activity cards */
+    .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .activity-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 1.25rem 1.4rem 1.4rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .activity-pill {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .activity-title {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .activity-subtitle {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 0.55rem;
+    }
+
+    .activity-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .activity-footer {
+      margin-top: auto;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.9rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      text-decoration: none;
+      background: #fff;
+    }
+
+    .btn-link:hover {
+      background: var(--primary-soft);
+      text-decoration: none;
+    }
+
+    .btn-link span.arrow {
+      font-size: 0.95rem;
+    }
+
+    /* Checklist */
+    .checklist {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      padding-left: 1.1rem;
+    }
+    .checklist li {
+      margin-bottom: 0.25rem;
+    }
+
+    .checklist strong {
+      color: var(--text-main);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.45rem;
+      }
+      .page {
+        padding-inline: 1rem;
+      }
+      header {
+        margin-inline: -1rem;
+      }
+      .nav {
+        margin-inline: -1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="page">
+    <header>
+      <h1>Research Methods &amp; Professional Practice – e-Portfolio</h1>
+      <div class="meta">
+        <strong>Student:</strong> Naeema Abdalla Ahmed Alnaqbi &nbsp;|&nbsp;
+        <strong>Programme:</strong> MSc Artificial Intelligence, University of Essex Online
+      </div>
+    </header>
 
-<header>
-    <h1>Research Methods & Professional Practice – e-Portfolio</h1>
-    <p><strong>Student:</strong> Naeema Abdalla Ahmed Alnaqbi  
-       &nbsp; | &nbsp;  
-       <strong>Programme:</strong> MSc Artificial Intelligence  
-       &nbsp; | &nbsp;  
-       University of Essex Online
-    </p>
-</header>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="discussion.html">Discussion (Units 1–3)</a>
+      <a href="reflective-activity-1.html">Reflective Activity 1</a>
+      <a href="stats.html">Statistics Artefacts (Units 8–9)</a>
+      <a href="proposal-eval.html">Lit Review &amp; Proposal Evaluation</a>
+      <a href="reflection.html">Final 1,000-word Reflection</a>
+    </nav>
 
-<div class="container">
-
-    <!-- Welcome Card -->
-    <div class="card">
-        <h2 class="section-title">Welcome</h2>
-        <p>
-            This e-portfolio documents my learning journey in the
-            <em>Research Methods and Professional Practice</em> module.  
-            It collects key formative activities, reflections, and assessed work that show my progress in:
+    <main>
+      <!-- Welcome -->
+      <section class="card">
+        <div class="welcome-title">Welcome</div>
+        <p style="margin-top:0;">
+          This e-portfolio documents my learning journey in the
+          <em>Research Methods and Professional Practice</em> module. It collects key formative
+          activities, reflections, and assessed work that evidence my progress in:
         </p>
-        <ul>
-            <li>understanding ethical and professional issues in computing</li>
-            <li>planning and evaluating research (literature review & proposal)</li>
-            <li>developing statistical analysis skills and reflective practice</li>
+        <ul class="welcome-list">
+          <li>understanding ethical, legal, and professional issues in computing</li>
+          <li>planning and evaluating research (literature review &amp; research proposal)</li>
+          <li>developing statistical analysis skills and reflective practice</li>
         </ul>
-    </div>
+        <p style="margin-top:0.8rem; font-size:0.9rem; color:var(--text-muted);">
+          GitHub Pages URL for this e-portfolio:
+          <code>https://naeema23-eng.github.io/rmpp-eportfolio/</code>
+        </p>
+      </section>
 
-    <!-- Activities Section -->
-    <div class="card">
-        <h2 class="section-title">Key Activities (Units 1–3)</h2>
+      <!-- Key activities -->
+      <h2 class="section-title">Key Activities (Units 1–3)</h2>
+      <section class="activities-grid">
+        <!-- Discussion card -->
+        <article class="activity-card">
+          <div>
+            <div class="activity-pill">Discussion</div>
+            <div class="activity-title">Codes of Ethics &amp; Professional Conduct</div>
+            <div class="activity-subtitle">Collaborative Discussion 1 (Units 1–3)</div>
+            <p class="activity-text">
+              Initial post, three peer responses, and a summary post analysing the ACM
+              “Data Breach at a Medical Database” case, with comparison to the BCS Code
+              of Conduct and wider ethical, legal, and social implications.
+            </p>
+          </div>
+          <div class="activity-footer">
+            <a class="btn-link" href="discussion.html">
+              <span>View discussion evidence</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
 
-        <div class="card-row">
-
-            <!-- Discussion -->
-            <div class="card-small">
-                <strong style="color:#555;">Discussion</strong>
-                <h3>Codes of Ethics & Professional Conduct</h3>
-                <p>
-                    Initial post, three peer responses, and summary analysis of the ACM “Data Breach at a Medical Database” case, with comparison to BCS Code of Conduct.
-                </p>
-                <a class="button" href="discussion.html">View discussion evidence</a>
+        <!-- Reflective Activity 1 card -->
+        <article class="activity-card">
+          <div>
+            <div class="activity-pill">Reflection</div>
+            <div class="activity-title">
+              Reflective Activity 1 – Ethics in Computing &amp; Generative AI
             </div>
+            <div class="activity-subtitle">Unit 1 Reflective Activity</div>
+            <p class="activity-text">
+              A 1,000-word critical reflection on global AI ethics guidelines, generative
+              AI in computing, and the implications for legal, social, and professional
+              practice, based on Corrêa et&nbsp;al. (2023) and related literature.
+            </p>
+          </div>
+          <div class="activity-footer">
+            <a class="btn-link" href="reflective-activity-1.html">
+              <span>Read reflection</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
 
-            <!-- Reflection Activity 1 -->
-            <div class="card-small">
-                <strong style="color:#555;">Reflection</strong>
-                <h3>Reflective Activity 1 – Ethics in Computing & Generative AI</h3>
-                <p>
-                    A 1,000-word critical reflection on global AI ethics guidelines, generative AI, and implications for legal, social, and professional practice.
-                </p>
-                <a class="button" href="reflective-activity-1.html">Read reflection</a>
-            </div>
+        <!-- Lit review & proposal card -->
+        <article class="activity-card">
+          <div>
+            <div class="activity-pill">Coming later</div>
+            <div class="activity-title">Literature Review &amp; Research Proposal</div>
+            <div class="activity-subtitle">Units 2–10</div>
+            <p class="activity-text">
+              This section will include my literature review, research proposal outline,
+              final proposal, and a brief self-evaluation once the corresponding units are
+              completed and marked.
+            </p>
+          </div>
+          <div class="activity-footer">
+            <a class="btn-link" href="proposal-eval.html">
+              <span>To be updated in later units</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+      </section>
 
-            <!-- Coming Soon -->
-            <div class="card-small">
-                <strong style="color:#888;">Coming later</strong>
-                <h3>Literature Review & Research Proposal</h3>
-                <p>
-                    This section will include the literature review, proposal outline, and self-evaluation once completed in later units.
-                </p>
-                <a class="button" href="proposal-eval.html">To be added in later units</a>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Checklist -->
-    <div class="card">
-        <h2 class="section-title">Module e-Portfolio Checklist (in progress)</h2>
+      <!-- Checklist -->
+      <h2 class="section-title">Module e-Portfolio Checklist (in progress)</h2>
+      <section class="card">
+        <p style="margin-top:0; font-size:0.93rem;">
+          This checklist tracks the required components for the final e-portfolio submission
+          (Unit 12, 40% of the module mark).
+        </p>
         <ul class="checklist">
-            <li>✔ Unit 1–3 Discussion: Initial post, peer responses, summary</li>
-            <li>✔ Reflective Activity 1 – Ethics & Generative AI</li>
-            <li>□ Literature Review (final submission) + short self-evaluation</li>
-            <li>□ Research Proposal (final submission) + short self-evaluation</li>
-            <li>□ Statistics exercises (Units 8–9) and learning reflection</li>
-            <li>□ Final 1,000-word module reflection + e-portfolio branch for submission</li>
+          <li>✔ <strong>Unit 1–3 Discussion:</strong> Initial post, three peer responses, summary</li>
+          <li>✔ <strong>Reflective Activity 1:</strong> Ethics in Computing in the age of Generative AI</li>
+          <li>☐ <strong>Literature Review:</strong> Final submission + short self-evaluation</li>
+          <li>☐ <strong>Research Proposal:</strong> Final submission + short self-evaluation</li>
+          <li>☐ <strong>Statistics exercises (Units 8–9):</strong> Worksheets + brief reflection</li>
+          <li>☐ <strong>Final 1,000-word module reflection:</strong> Plus dedicated e-portfolio branch for submission</li>
         </ul>
-    </div>
-
-</div>
-
+      </section>
+    </main>
+  </div>
 </body>
 </html>
