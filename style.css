@@ -1,4 +1,4 @@
-/* style.css – Beige/white academic theme */
+/* style.css – Beige/white academic theme for Naeema's e-Portfolio */
 
 :root {
   --bg-main: #f4efe7;
@@ -32,14 +32,16 @@ body {
   padding: 24px 16px 40px;
 }
 
+/* Header & nav */
+
 header.site-header {
   margin-bottom: 20px;
 }
 
 header.site-header .brand {
   display: flex;
-  align-items: baseline;
-  gap: 8px;
+  flex-direction: column;
+  gap: 4px;
 }
 
 header.site-header .brand h1 {
@@ -153,116 +155,4 @@ h2.page-title {
 }
 
 p {
-  line-height: 1.6;
-  margin: 0 0 0.7em;
-}
-
-.small-muted {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.tag-pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 8px;
-  border-radius: 999px;
-  border: 1px solid var(--accent-soft);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-}
-
-/* Lists & meta */
-
-ul.clean {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-ul.clean li {
-  margin-bottom: 4px;
-  font-size: 0.9rem;
-}
-
-/* Timeline / side notes */
-
-aside.sidebar .card {
-  position: sticky;
-  top: 16px;
-}
-
-.timeline {
-  border-left: 2px solid var(--accent-soft);
-  padding-left: 14px;
-  margin-top: 6px;
-}
-
-.timeline-item {
-  margin-bottom: 10px;
-}
-
-.timeline-item span {
-  display: block;
-  font-size: 0.82rem;
-}
-
-.timeline-item .unit {
-  font-weight: 600;
-  color: var(--text-main);
-}
-
-.timeline-item .label {
-  color: var(--text-muted);
-}
-
-/* Tables */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 8px 0 4px;
-  font-size: 0.9rem;
-}
-
-th, td {
-  padding: 6px 8px;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-th {
-  text-align: left;
-  background: #faf7f1;
-  font-weight: 600;
-}
-
-/* Utility */
-
-.section-label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  margin-bottom: 4px;
-}
-
-blockquote.activity-excerpt {
-  margin: 8px 0;
-  padding: 8px 12px;
-  border-left: 3px solid var(--accent-soft);
-  background: #fbf7f0;
-  font-size: 0.9rem;
-}
-
-/* Footer */
-
-footer.site-footer {
-  margin-top: 32px;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-align: center;
-  padding-top: 12px;
-  border-top: 1px solid var(--border-soft);
-}
+  line-height: 1.6
