@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="top">
+<body>
   <div class="main-wrapper">
 
     <header class="site-header">
@@ -32,45 +32,128 @@
 
       <section>
 
-        <!-- Seminar 2 -->
+        <!-- SEMINAR 2 -->
         <div class="card" id="seminar2">
           <div class="card-header">
             <h2 class="page-title">Seminar 2: Peer Review Activity</h2>
-            <div class="meta small-muted">Unit 3 · Reviewing research proposals</div>
+            <div class="meta small-muted">Unit 3 · Evaluating literature, research design and methods</div>
           </div>
 
           <p>
-            This section will record my participation in Seminar 2, where I review a peer’s research proposal and receive
-            feedback on my own.
+            In this seminar, I reviewed two research papers in the broad area of AI in healthcare 
+            that used different research methods. One paper applied a quantitative machine-learning 
+            approach to predict patient deterioration using physiological time-series data, while the 
+            second paper used a qualitative, interview-based study to explore clinicians’ experiences 
+            with AI-assisted early warning systems.
           </p>
 
+          <h3>Purpose and contribution</h3>
+          <p>
+            Both papers contributed to the body of knowledge in clinical decision support. The 
+            quantitative paper aligned closely with my interest in machine-learning models built on 
+            vital-sign patterns, while the qualitative paper highlighted adoption challenges such as 
+            trust, alarm fatigue and workflow constraints.
+          </p>
+
+          <h3>Appropriateness of methods</h3>
+          <p>
+            The quantitative paper used supervised learning and appropriate evaluation metrics, 
+            making it suitable for a prediction-focused research question. The qualitative paper used 
+            semi-structured interviews and thematic analysis, which was ideal for exploring human 
+            factors and clinician perspectives.
+          </p>
+
+          <h3>Data collection and analysis</h3>
+          <p>
+            The quantitative study relied on secondary datasets with high-frequency vital signs and 
+            followed rigorous validation steps. The qualitative study used carefully coded interview 
+            transcripts to generate themes. Both approaches fit the nature of their research aims.
+          </p>
+
+          <h3>Evidence and claims</h3>
+          <p>
+            In both papers, claims were supported with appropriate evidence — performance results 
+            and comparisons in the quantitative study, and representative quotations and consistent 
+            thematic patterns in the qualitative study.
+          </p>
+
+          <h3>Suggestions for enhancement</h3>
           <ul>
-            <li>Proposal reviewed and key strengths</li>
-            <li>Constructive feedback provided</li>
-            <li>Feedback I received</li>
-            <li>How this shaped my research design</li>
+            <li>Add external validation for the ML model using prehospital datasets.</li>
+            <li>Include explainability techniques (SHAP, LIME) to support clinical interpretability.</li>
+            <li>Extend the qualitative study to include paramedics and EMS context.</li>
           </ul>
+
+          <h3>Reflection</h3>
+          <p>
+            This activity strengthened my understanding of how different research methods work 
+            together. For my own topic — predicting patient deterioration in prehospital care — a 
+            quantitative ML approach will be central, but qualitative insights about real-world usage 
+            remain valuable. This activity supports LO3 by helping me critically evaluate how existing 
+            studies are structured.
+          </p>
         </div>
 
-        <!-- Seminar 3 -->
+        <!-- SEMINAR 3 -->
         <div class="card" id="seminar3">
           <div class="card-header">
-            <h2>Seminar 3: Case Study on Privacy</h2>
-            <div class="meta small-muted">Unit 4 · Privacy, ethics and GDPR</div>
+            <h2 class="page-title">Seminar 3: Case Study on Privacy</h2>
+            <div class="meta small-muted">Unit 4 · Ethical and legal issues in data access</div>
           </div>
 
           <p>
-            This section will summarise my contribution to the privacy and data protection case study discussed in Seminar 3.
+            This seminar focused on a privacy case involving Ricardo, a records clerk with access to 
+            sensitive property tax data, and Beth, a researcher requesting identifiable information 
+            that she was not authorised to access. The scenario highlighted important questions about 
+            consent, responsible data handling and organisational policy.
+          </p>
+
+          <h3>Ethical issues for Ricardo</h3>
+          <p>
+            If Ricardo is not responsible for determining access, he must not release any identifiable 
+            data. He is bound by organisational policy, confidentiality obligations and data protection 
+            regulations. Even if he is responsible for access decisions, he must evaluate whether the 
+            request adheres to lawful, ethical and professional standards.
+          </p>
+
+          <h3>Ethical issues for the Records Department</h3>
+          <p>
+            The department must consider whether releasing names aligns with the original purpose of the 
+            data collection, whether Beth has ethical approval, and whether disclosure poses risks to the 
+            individuals. Issues of re-identification, privacy, fairness and public trust are central.
+          </p>
+
+          <h3>Should Beth contact the individuals?</h3>
+          <p>
+            Beth should only contact individuals if informed consent is obtained through an approved 
+            ethical process. Having access to anonymised data does not justify retrieving or using 
+            identifiable information unless the organisation explicitly authorises it and privacy 
+            safeguards are in place.
+          </p>
+
+          <h3>Non-response and study validity</h3>
+          <p>
+            If only one-third give permission, one-third deny and one-third do not respond, Beth cannot 
+            assume implied consent from non-responders. Her options include:
           </p>
 
           <ul>
-            <li>Case overview</li>
-            <li>Ethical and legal issues identified</li>
-            <li>Professional response under ACM/BCS</li>
+            <li>Proceeding with only the consenting group.</li>
+            <li>Redesigning the methodology.</li>
+            <li>Using anonymised or aggregated data instead.</li>
+            <li>Providing a methodological justification for the smaller sample size.</li>
           </ul>
+
+          <h3>Reflection</h3>
+          <p>
+            This case connects directly to my own experience in healthcare, where physiological and 
+            clinical data must be handled with extreme care. Ethical approval, consent and data 
+            minimisation are essential before using any identifiable data. The seminar reinforced the 
+            importance of responsible practice as outlined across ACM and BCS ethical codes.
+          </p>
         </div>
 
-        <!-- Wiki Activity -->
+        <!-- WIKI ACTIVITY -->
         <div class="card" id="wiki">
           <div class="card-header">
             <h2>Wiki Activity: Questionnaires</h2>
@@ -90,26 +173,21 @@
 
       </section>
 
+      <!-- SIDEBAR -->
       <aside class="sidebar">
-
-        <!-- Quick navigation -->
         <div class="card">
-          <div class="card-header">
-            <h3>Quick navigation</h3>
-          </div>
+          <div class="card-header"><h3>Quick Navigation</h3></div>
           <ul class="clean">
-            <li><a href="#seminar2">Seminar 2 – Peer Review</a></li>
-            <li><a href="#seminar3">Seminar 3 – Privacy Case Study</a></li>
-            <li><a href="#wiki">Wiki Activity – Questionnaires</a></li>
+            <li><a href="#seminar2">Seminar 2: Peer Review</a></li>
+            <li><a href="#seminar3">Seminar 3: Privacy Case Study</a></li>
+            <li><a href="#wiki">Wiki Activity</a></li>
           </ul>
         </div>
 
-        <!-- Skills highlighted -->
         <div class="card">
-          <div class="card-header"><h3>Skills highlighted</h3></div>
-
+          <div class="card-header"><h3>Skills Highlighted</h3></div>
           <ul class="clean">
-            <li><span class="tag-pill">Collaboration</span>Peer review &amp; teamwork</li>
+            <li><span class="tag-pill">Collaboration</span>Peer review & teamwork</li>
             <li><span class="tag-pill">Ethics</span>Responsible practice</li>
             <li><span class="tag-pill">Communication</span>Academic clarity</li>
             <li><span class="tag-pill">Design</span>Improving research tools</li>
@@ -126,4 +204,3 @@
   </div>
 </body>
 </html>
-
