@@ -2,433 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RMPP – e-Portfolio | Naeema Alnaqbi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #f7f1e8;
-      --bg-alt: #fffaf3;
-      --card: #ffffff;
-      --accent: #8a7060;
-      --accent-soft: #d8c5b5;
-      --text-main: #2f2a26;
-      --text-muted: #6d6259;
-      --border-subtle: #e0d3c6;
-      --link: #5b6ea6;
-      --link-hover: #3e4f8c;
-      --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.06);
-      --radius-lg: 18px;
-      --radius-pill: 999px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #fdf6ec 0, #f4ece4 40%, #f2e7da 100%);
-      color: var(--text-main);
-      line-height: 1.6;
-      padding: 0;
-      margin: 0;
-    }
-
-    .page {
-      max-width: 1080px;
-      margin: 0 auto 64px;
-      padding: 24px 20px 64px;
-    }
-
-    header {
-      background: linear-gradient(135deg, #30465b, #4e6783);
-      color: #ffffff;
-      padding: 18px 20px;
-      box-shadow: var(--shadow-soft);
-    }
-
-    header .inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    header h1 {
-      font-size: 1.6rem;
-      letter-spacing: 0.02em;
-    }
-
-    header .meta {
-      font-size: 0.9rem;
-      opacity: 0.9;
-    }
-
-    nav {
-      margin-top: 12px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    nav a {
-      text-decoration: none;
-      font-size: 0.9rem;
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      color: #ffffff;
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(6px);
-      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
-    }
-
-    nav a:hover {
-      background: rgba(255, 255, 255, 0.16);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-      transform: translateY(-1px);
-    }
-
-    main {
-      margin-top: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: var(--radius-lg);
-      padding: 22px 24px;
-      box-shadow: var(--shadow-soft);
-      border: 1px solid var(--border-subtle);
-    }
-
-    .card-soft {
-      background: var(--bg-alt);
-      border-radius: var(--radius-lg);
-      padding: 20px 22px;
-      border: 1px dashed var(--accent-soft);
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-bottom: 8px;
-    }
-
-    h3 {
-      font-size: 1.05rem;
-      margin-bottom: 6px;
-    }
-
-    .welcome-intro {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 2px 12px;
-      border-radius: var(--radius-pill);
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      background: #edf1ff;
-      color: #324272;
-      font-weight: 600;
-    }
-
-    .pill span {
-      font-size: 0.65rem;
-    }
-
-    .welcome-list {
-      margin-top: 10px;
-      padding-left: 18px;
-      font-size: 0.95rem;
-    }
-
-    .welcome-list li {
-      margin-bottom: 4px;
-    }
-
-    .key-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-    }
-
-    .key-card-tag {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      margin-bottom: 2px;
-    }
-
-    .key-title {
-      font-weight: 600;
-      font-size: 1.02rem;
-      margin-bottom: 4px;
-    }
-
-    .key-description {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-    }
-
-    .btn-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.88rem;
-      text-decoration: none;
-      color: var(--link);
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: var(--radius-pill);
-      background: #f2f5ff;
-      border: 1px solid #dde4ff;
-      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
-    }
-
-    .btn-link:hover {
-      background: #e4ecff;
-      color: var(--link-hover);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-      transform: translateY(-1px);
-    }
-
-    .checklist-list {
-      margin-top: 8px;
-      font-size: 0.9rem;
-      list-style: none;
-    }
-
-    .checklist-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      margin-bottom: 4px;
-    }
-
-    .checklist-list span.check {
-      color: #2f7c4c;
-      font-weight: 700;
-      margin-top: 2px;
-    }
-
-    .checklist-list span.empty {
-      color: #c2aa98;
-      font-weight: 700;
-      margin-top: 2px;
-    }
-
-    .note {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      margin-top: 6px;
-    }
-
-    .activity-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 8px;
-      font-size: 0.88rem;
-    }
-
-    .activity-table th,
-    .activity-table td {
-      padding: 6px 8px;
-      border-bottom: 1px solid var(--border-subtle);
-      text-align: left;
-    }
-
-    .activity-table th {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-muted);
-    }
-
-    .label-ep {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: var(--radius-pill);
-      background: #f3e6d8;
-      font-size: 0.75rem;
-    }
-
-    @media (max-width: 640px) {
-      header h1 {
-        font-size: 1.35rem;
-      }
-      .page {
-        padding: 18px 14px 40px;
-      }
-      .card, .card-soft {
-        padding: 18px 16px;
-      }
-    }
-  </style>
+  <title>Launching into Computing – e-Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="inner">
-      <h1>Research Methods &amp; Professional Practice &mdash; e-Portfolio</h1>
-      <div class="meta">
-        Student: <strong>Naeema Abdalla Ahmed Alnaqbi</strong> &nbsp;|&nbsp;
-        Programme: <strong>MSc Artificial Intelligence</strong> &nbsp;|&nbsp;
-        University of Essex Online
+  <div class="main-wrapper">
+    <header class="site-header">
+      <div class="brand">
+        <h1>Launching into Computing</h1>
+        <span>MSc Artificial Intelligence – e-Portfolio</span>
       </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="discussion.html">Discussion (Units 1&ndash;3)</a>
-        <a href="reflective-activity-1.html">Reflective Activity 1</a>
-        <a href="stats.html">Statistics Artefacts</a>
-        <a href="proposal-eval.html">Lit Review &amp; Proposal Evaluation</a>
-        <a href="reflection.html">Final 1,000-word Reflection</a>
-      </nav>
-    </div>
-  </header>
-
-  <div class="page">
-    <main>
-      <!-- Welcome -->
-      <section class="card">
-        <h2>Welcome</h2>
-        <p class="welcome-intro">
-          This e-portfolio documents my learning journey in the
-          <em>Research Methods and Professional Practice</em> module.
-          It collects key formative activities, reflections, and assessed work
-          that evidence my progress in:
-        </p>
-        <ul class="welcome-list">
-          <li>understanding ethical and professional issues in computing</li>
-          <li>planning and evaluating research (literature review &amp; proposal)</li>
-          <li>developing statistical analysis skills and reflective practice</li>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="discussion.html">Discussions</a></li>
+          <li><a href="research.html">Research &amp; Proposal</a></li>
+          <li><a href="statistics.html">Statistics &amp; Data</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-        <p class="note">
-          GitHub Pages URL (this site): <code>https://naeema23-eng.github.io/rmpp-eportfolio/</code>
-        </p>
-      </section>
+      </nav>
+    </header>
 
-      <!-- Key activities -->
-      <section class="card-soft">
-        <div class="pill"><span>&bull;</span> Units 1&ndash;3 overview</div>
-        <h2 style="margin-top:10px;">Key Activities (Units 1&ndash;3)</h2>
-        <div class="key-grid" style="margin-top:14px;">
-          <article class="card" style="box-shadow:none;">
-            <div class="key-card-tag">Discussion</div>
-            <div class="key-title">Codes of Ethics &amp; Professional Conduct</div>
-            <p class="key-description">
-              Initial post, three peer responses, and a summary post analysing the ACM
-              &ldquo;Data Breach at a Medical Database&rdquo; case, with comparison to the BCS Code of Conduct.
-            </p>
-            <a class="btn-link" href="discussion.html">View discussion evidence →</a>
-          </article>
+    <main class="page-grid">
+      <section>
+        <div class="card">
+          <div class="card-header">
+            <h2 class="page-title">Welcome to my e-Portfolio</h2>
+            <div class="meta small-muted">
+              Evidence of learning across Units 1–12 of the Launching into Computing module.
+            </div>
+          </div>
+          <p>
+            This e-portfolio documents my learning journey throughout the
+            <strong>Launching into Computing</strong> module, part of my
+            <strong>MSc Artificial Intelligence</strong> programme with the University of Essex Online.
+            It brings together collaborative discussions, research activities, statistics work, and reflective
+            pieces from Units 1–12.
+          </p>
+          <p>
+            Each page in the navigation bar focuses on a specific strand of the module, with activities clearly
+            labelled by unit number and assessment type. Evidence is presented alongside short explanations of
+            what I did, why it mattered, and what I learned from it.
+          </p>
+        </div>
 
-          <article class="card" style="box-shadow:none;">
-            <div class="key-card-tag">Reflection</div>
-            <div class="key-title">Reflective Activity 1 &mdash; Ethics in Computing &amp; Generative AI</div>
-            <p class="key-description">
-              A 1,000-word critical reflection on global AI ethics guidelines,
-              generative AI, and implications for legal, social, and professional practice.
-            </p>
-            <a class="btn-link" href="reflective-activity-1.html">Read reflection →</a>
-          </article>
-
-          <article class="card" style="box-shadow:none;">
-            <div class="key-card-tag">Coming later</div>
-            <div class="key-title">Literature Review &amp; Research Proposal</div>
-            <p class="key-description">
-              This section will include my literature review, research proposal outline,
-              and self-evaluation once the corresponding units are completed and marked.
-            </p>
-            <a class="btn-link" href="proposal-eval.html">To be added in later units →</a>
-          </article>
+        <div class="card">
+          <div class="card-header">
+            <h3>How to navigate this portfolio</h3>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Page</th>
+                <th>Focus</th>
+                <th>Key Evidence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Discussions</strong></td>
+                <td>Collaborative online discussions</td>
+                <td>Discussion 1 &amp; 2 (initial posts, responses, summaries)</td>
+              </tr>
+              <tr>
+                <td><strong>Research &amp; Proposal</strong></td>
+                <td>Literature review and research planning</td>
+                <td>Proposal outlines, literature review activities, peer review</td>
+              </tr>
+              <tr>
+                <td><strong>Statistics &amp; Data</strong></td>
+                <td>Quantitative activities</td>
+                <td>Statistics worksheets (Units 7–10), charts example</td>
+              </tr>
+              <tr>
+                <td><strong>Reflections</strong></td>
+                <td>Personal and ethical reflection</td>
+                <td>Reflective activities, final 1,000-word reflection</td>
+              </tr>
+              <tr>
+                <td><strong>Activities</strong></td>
+                <td>Seminars, case studies, wiki</td>
+                <td>Peer review seminar, privacy case study, questionnaires wiki</td>
+              </tr>
+              <tr>
+                <td><strong>About</strong></td>
+                <td>Context and outcomes</td>
+                <td>About me, goals, mapping to module learning outcomes</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
-      <!-- Checklist -->
-      <section class="card">
-        <div class="pill"><span>✓</span> Module e-Portfolio checklist</div>
-        <h2 style="margin-top:10px;">Module e-Portfolio Checklist (in progress)</h2>
-        <ul class="checklist-list">
-          <li><span class="check">✔</span><span>Unit 1–3 Collaborative Discussion 1: Initial post, peer responses, summary.</span></li>
-          <li><span class="check">✔</span><span>Reflective Activity 1 &mdash; Ethics in Computing in the age of Generative AI.</span></li>
-          <li><span class="empty">○</span><span>Literature Review (final submission) + short self-evaluation.</span></li>
-          <li><span class="empty">○</span><span>Research Proposal (final submission) + short self-evaluation.</span></li>
-          <li><span class="empty">○</span><span>Statistics exercises (Units 8–9) and learning reflection.</span></li>
-          <li><span class="empty">○</span><span>Final 1,000-word module reflection (Unit 12) and e-portfolio branch for submission.</span></li>
-        </ul>
-        <p class="note">
-          All pages use UoEO Harvard references; artefacts (PDFs, images, spreadsheets) will be linked in-line
-          or stored in the <code>/assets/</code> folder.
-        </p>
-      </section>
-
-      <!-- Activity map (optional but nice for tutors) -->
-      <section class="card-soft">
-        <h2>Activity Map for this Module</h2>
-        <table class="activity-table" aria-describedby="activity-note">
-          <thead>
-            <tr>
-              <th style="width:8%;">Unit</th>
-              <th style="width:50%;">Component</th>
-              <th style="width:20%;">Status</th>
-              <th style="width:22%;">Included in e-Portfolio?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1–3</td>
-              <td>Collaborative Discussion 1: Codes of Ethics &amp; Professional Conduct</td>
-              <td>Completed</td>
-              <td><span class="label-ep">Yes &mdash; this site</span></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Reflective Activity 1: Ethics in Computing in the age of Generative AI</td>
-              <td>In progress</td>
-              <td><span class="label-ep">Yes &mdash; Reflective Activity 1</span></td>
-            </tr>
-            <tr>
-              <td>2–4</td>
-              <td>Literature Review &amp; Research Proposal Outlines and Reviews</td>
-              <td>To be completed</td>
-              <td><span class="label-ep">Planned</span></td>
-            </tr>
-            <tr>
-              <td>7–10</td>
-              <td>Statistics worksheets and charts examples</td>
-              <td>To be completed</td>
-              <td><span class="label-ep">Planned</span></td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td>Final 1,000-word reflective piece &amp; e-Portfolio submission</td>
-              <td>To be completed</td>
-              <td><span class="label-ep">Planned</span></td>
-            </tr>
-          </tbody>
-        </table>
-        <p id="activity-note" class="note">
-          This table mirrors the module assessment schedule and helps track which elements are represented in the e-portfolio.
-        </p>
-      </section>
+      <aside class="sidebar">
+        <div class="card">
+          <div class="card-header">
+            <h3>Unit overview</h3>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="unit">Units 1–3</span>
+              <span class="label">Collaborative Discussion 1, ethics reflection, proposal beginnings</span>
+            </div>
+            <div class="timeline-item">
+              <span class="unit">Units 4–5</span>
+              <span class="label">Literature review outline, privacy and survey case studies, wiki activity</span>
+            </div>
+            <div class="timeline-item">
+              <span class="unit">Units 7–9</span>
+              <span class="label">Collaborative Discussion 2, statistics worksheets, charts example</span>
+            </div>
+            <div class="timeline-item">
+              <span class="unit">Unit 10</span>
+              <span class="label">Consolidating statistics and data interpretation</span>
+            </div>
+            <div class="timeline-item">
+              <span class="unit">Unit 12</span>
+              <span class="label">Final 1,000-word reflection and future development</span>
+            </div>
+          </div>
+        </div>
+      </aside>
     </main>
+
+    <footer class="site-footer">
+      Launching into Computing – e-Portfolio
+    </footer>
   </div>
 </body>
 </html>
