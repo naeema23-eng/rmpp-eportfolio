@@ -66,301 +66,145 @@
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- UNIT 7: OVERVIEW -->
+        <!-- UNIT 7: WORKSHEETS OVERVIEW -->
         <div class="card" id="unit7-overview">
           <div class="card-header">
-            <h2 class="page-title">Unit 7 – Summary Measures and Hypothesis Testing</h2>
-            <div class="meta small-muted">Unit 7 · Applying descriptive and inferential statistics</div>
+            <h2 class="page-title">Unit 7 – Inferential Statistics: Worksheets &amp; Interpretation</h2>
+            <div class="meta small-muted">Unit 7 · Summary measures, hypothesis testing, and evidence-based conclusions</div>
           </div>
 
           <p>
-            Unit 7 built directly on the descriptive statistics from Unit 6 and moved into <strong>inferential statistics</strong>.
-            The focus was on understanding how we can use sample data to make statements about a wider population, quantify
-            uncertainty using probability, and test claims through formal <strong>hypothesis testing</strong>.
+            Unit 7 built on descriptive statistics and introduced <strong>inferential statistics</strong> and
+            <strong>hypothesis testing</strong>. The key learning was that conclusions about a wider population are made from
+            sample data under uncertainty. This requires correctly selecting tests (independent vs. paired), understanding
+            assumptions (such as equal variances), and interpreting <em>p</em>-values as evidence rather than “proof”.
           </p>
 
           <p>
-            The worksheets for this unit used several real-world datasets (B–G) covering weight-loss interventions, income
-            differences, brand preferences, ecological prevalence, packaging designs and filtration agents. For each dataset,
-            I calculated appropriate summary measures (for example, means and standard deviations), selected a suitable
-            statistical test (independent t-test, paired t-test or chi-square), and interpreted the results in context.
-          </p>
-
-          <p>
-            The activity showed how descriptive statistics and hypothesis tests work together: summary measures help to
-            understand patterns in the data, while inferential methods indicate whether those patterns are likely to reflect
-            genuine population differences or may be due to random variation. The interpretations below document the key
-            findings for each dataset and link them back to good research practice.
+            Below, I document my completed worksheet outputs (7.1 Summary Measures and 7.2 Hypothesis Testing), using the
+            provided datasets. Each card includes a concise interpretation to demonstrate understanding of the results.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- DATASET B: DIETS -->
-        <div class="card" id="dataset-b">
+        <!-- UNIT 7.1: DATASET B (DIETS) SUMMARY MEASURES -->
+        <div class="card" id="unit7-datasetb-summary">
           <div class="card-header">
-            <h2 class="page-title">Dataset B – Diets (Summary Measures &amp; Independent t-test)</h2>
-            <div class="meta small-muted">Unit 7 · e-Portfolio Activity 7.1 &amp; 7.2</div>
+            <h2 class="page-title">Unit 7.1 – Summary Measures (Dataset B: Diets)</h2>
+            <div class="meta small-muted">Dataset B · Measures of location and spread</div>
           </div>
 
-          <h3>Context and variables</h3>
-          <p>
-            Dataset B contains weight-loss data for 100 individuals who followed one of two diets, A or B.
-            The variables are:
-          </p>
+          <p class="section-label">Key results (Diet B)</p>
           <ul>
-            <li><strong>Diet</strong> – the diet undertaken (A or B).</li>
-            <li><strong>Wtloss</strong> – weight loss in kilograms after a fixed period (negative values indicate weight gain).</li>
+            <li><strong>Mean:</strong> 3.710</li>
+            <li><strong>Standard deviation:</strong> 2.769</li>
+            <li><strong>Median:</strong> 3.745</li>
+            <li><strong>Minimum:</strong> −4.148</li>
+            <li><strong>Maximum:</strong> 10.539</li>
+            <li><strong>Q1:</strong> 1.953</li>
+            <li><strong>Q3:</strong> 5.4035</li>
+            <li><strong>IQR:</strong> 3.4505</li>
           </ul>
 
-          <h3>Descriptive statistics</h3>
+          <p class="section-label">Interpretation</p>
           <p>
-            Each diet group contained 50 participants. The mean weight loss on Diet A was approximately
-            <strong>5.341 kg</strong> (SD ≈ <strong>2.536</strong>), while the mean on Diet B was around
-            <strong>3.710 kg</strong> (SD ≈ <strong>2.769</strong>). This suggests that Diet A produced greater average weight loss,
-            but both groups showed noticeable variability, with some individuals even gaining weight.
-          </p>
-
-          <h3>Hypothesis test and interpretation</h3>
-          <p>
-            To determine whether this difference is statistically significant, I used an
-            <strong>independent-samples t-test</strong> (equal variances supported by an F-test):
-          </p>
-          <ul>
-            <li><strong>H₀:</strong> There is no difference in mean weight loss between Diet A and Diet B (μ<sub>A</sub> = μ<sub>B</sub>).</li>
-            <li><strong>H₁:</strong> The mean weight loss differs between the two diets (μ<sub>A</sub> ≠ μ<sub>B</sub>).</li>
-          </ul>
-          <p>
-            The test produced a t-statistic of approximately <strong>t = 3.072</strong> with
-            <strong>98 degrees of freedom</strong> and a two-tailed <strong>p-value ≈ 0.00275</strong>. At the 5% significance level,
-            this allowed me to <strong>reject the null hypothesis</strong>. Statistically, there is strong evidence that the
-            population mean weight loss differs between the diets, with Diet A performing better in this sample.
-          </p>
-
-          <h3>Learning points</h3>
-          <p>
-            This exercise showed how descriptive statistics can highlight potential differences, but hypothesis testing is
-            required to judge whether those differences are likely to be real rather than random. It also reinforced key
-            ideas such as setting up H₀ and H₁, using an appropriate test for independent groups, and interpreting p-values
-            in the context of the research question. In my own work with physiological data, I can apply the same logic to
-            compare, for example, the performance of different early-warning scores or machine-learning models.
+            Diet B shows a moderate average weight loss but <strong>relatively high variability</strong>. While some
+            participants experienced substantial weight reduction, others showed minimal or negative outcomes. The spread
+            (SD and IQR) suggests meaningful individual differences in response, which supports the need for inferential
+            testing when comparing Diet A vs. Diet B.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- DATASET C: SUPERPLUS -->
-        <div class="card" id="dataset-c">
+        <!-- UNIT 7.2: DATASET B (DIETS) HYPOTHESIS TEST -->
+        <div class="card" id="unit7-datasetb-test">
           <div class="card-header">
-            <h2 class="page-title">Dataset C – Superplus (Income by Sex)</h2>
-            <div class="meta small-muted">Unit 7 · Independent t-test with ratio data</div>
+            <h2 class="page-title">Unit 7.2 – Hypothesis Testing (Dataset B: Diets)</h2>
+            <div class="meta small-muted">Dataset B · F-test (variance) + independent t-test (two-tailed)</div>
           </div>
 
-          <h3>Context and variables</h3>
-          <p>
-            Dataset C records the annual incomes of 120 cardholders of a “Superplus Diamond” card:
-          </p>
+          <p class="section-label">Results</p>
           <ul>
-            <li><strong>Sex</strong> – male (M) or female (F).</li>
-            <li><strong>Income</strong> – gross annual income in thousands of pounds (£000s).</li>
+            <li><strong>Variance check (F-test p-value):</strong> 0.5399</li>
+            <li><strong>Independent t-test p-value (equal variances, two-tailed):</strong> 0.00275</li>
           </ul>
 
-          <h3>Descriptive statistics</h3>
+          <p class="section-label">Conclusion</p>
           <p>
-            The sample contained 60 males and 60 females. The mean male income was about
-            <strong>£52.91k</strong> (SD ≈ <strong>£15.27k</strong>), while the mean female income was roughly
-            <strong>£44.23k</strong> (SD ≈ <strong>£13.79k</strong>). On average, male cardholders in this sample earn more,
-            but there is substantial overlap between the two distributions, which is why inferential analysis is needed.
-          </p>
-
-          <h3>Hypothesis test and interpretation</h3>
-          <p>
-            I used an <strong>independent-samples t-test</strong> to compare mean incomes:
-          </p>
-          <ul>
-            <li><strong>H₀:</strong> Mean income is equal for males and females (μ<sub>M</sub> = μ<sub>F</sub>).</li>
-            <li><strong>H₁:</strong> Mean income differs by sex (μ<sub>M</sub> ≠ μ<sub>F</sub>).</li>
-          </ul>
-          <p>
-            The test gave <strong>t ≈ 3.27</strong> with <strong>118 degrees of freedom</strong> and a two-tailed
-            <strong>p-value ≈ 0.0014</strong>. With p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. There is strong
-            statistical evidence that male and female mean incomes differ in the population, with higher average income
-            for men in this dataset.
-          </p>
-
-          <h3>Learning points</h3>
-          <p>
-            This example emphasised that even when distributions overlap, statistically significant differences can exist
-            at the population level. It also illustrated how to work with ratio-level financial data and interpret the
-            results carefully, avoiding over-generalisation. For my future research with AI models, similar tests can be
-            used to compare performance across subgroups (for example, different hospital sites or patient cohorts) to
-            check for fairness and robustness.
+            Since <strong>p &lt; 0.05</strong> for the independent t-test, the null hypothesis is rejected. There is a
+            statistically significant difference in mean weight loss between Diet A and Diet B. The variance test result
+            (p &gt; 0.05) supports the use of an equal-variance t-test in this comparison.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- DATASET D: BRAND PREFERENCES -->
-        <div class="card" id="dataset-d">
+        <!-- UNIT 7.1: DATASET D (BRAND PREFS) FREQUENCIES -->
+        <div class="card" id="unit7-datasetd-freq">
           <div class="card-header">
-            <h2 class="page-title">Dataset D – Brand Preferences</h2>
-            <div class="meta small-muted">Unit 7 · Categorical data and Chi-square</div>
+            <h2 class="page-title">Unit 7.1 – Frequency Summary (Dataset D: Brand Preferences)</h2>
+            <div class="meta small-muted">Dataset D · Frequency table and percentage interpretation</div>
           </div>
 
-          <h3>Context and variables</h3>
-          <p>
-            Dataset D comes from a marketing study that recorded which brand consumers preferred in two demographic areas.
-            The variables are:
-          </p>
+          <p class="section-label">Results (Area 2)</p>
           <ul>
-            <li><strong>Area</strong> – demographic area (1 or 2).</li>
-            <li><strong>Brand</strong> – preferred brand (A, B or Other).</li>
+            <li><strong>Brand A:</strong> 19 (21.11%)</li>
+            <li><strong>Brand B:</strong> 30 (33.33%)</li>
+            <li><strong>Other:</strong> 41 (45.56%)</li>
+            <li><strong>Total responses:</strong> 90</li>
           </ul>
 
-          <h3>Descriptive summary</h3>
+          <p class="section-label">Interpretation</p>
           <p>
-            A cross-tabulation by area showed some differences in raw counts, so a Chi-square test was used to check
-            whether any differences were statistically meaningful.
-          </p>
-
-          <h3>Chi-square test of independence</h3>
-          <ul>
-            <li><strong>H₀:</strong> Brand preference is independent of area.</li>
-            <li><strong>H₁:</strong> Brand preference is associated with area.</li>
-          </ul>
-          <p>
-            Using the 2×3 contingency table (Area × Brand), the Chi-square statistic was approximately
-            <strong>χ² ≈ 3.29</strong> with <strong>2 degrees of freedom</strong>, giving a <strong>p-value ≈ 0.193</strong>. Because
-            p &gt; 0.05, I <strong>failed to reject the null hypothesis</strong>. Statistically, there is not enough evidence to say
-            that brand preference differs significantly between the two areas.
-          </p>
-
-          <h3>Learning points</h3>
-          <p>
-            This dataset helped me practise working with purely categorical data and reinforced when to use a Chi-square test.
-            It also highlighted the difference between apparent differences in raw counts and statistically significant
-            differences. In AI and healthcare, similar contingency-table approaches can be applied to outcomes such as
-            “deteriorated vs. stable” across different hospitals or triage categories to test whether patterns are random or
-            meaningful.
+            In Area 2, <strong>“Other” brands are most frequently preferred</strong>, followed by Brand B and Brand A.
+            This provides a clear descriptive snapshot of preferences; however, frequency summaries alone do not establish
+            whether differences are statistically significant or whether preference patterns generalise beyond this sample.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- DATASET E: HEATHER -->
-        <div class="card" id="dataset-e">
+        <!-- UNIT 7.2: DATASET F (DESIGNS) PAIRED T-TEST -->
+        <div class="card" id="unit7-datasetf-test">
           <div class="card-header">
-            <h2 class="page-title">Dataset E – Heather Prevalence</h2>
-            <div class="meta small-muted">Unit 7 · Frequency tables and association</div>
+            <h2 class="page-title">Unit 7.2 – Paired t-test (Dataset F: Designs)</h2>
+            <div class="meta small-muted">Dataset F · Comparing two container designs across the same stores</div>
           </div>
 
-          <h3>Context and variables</h3>
-          <p>
-            Dataset E summarises an ecological study of heather prevalence across two heathland locations.
-            The data are already collated into a frequency table:
-          </p>
+          <p class="section-label">Result</p>
           <ul>
-            <li><strong>Location</strong> – A or B.</li>
-            <li><strong>Prevalence</strong> – Absent, Sparse or Abundant.</li>
+            <li><strong>Paired t-test p-value (two-tailed):</strong> 0.01834</li>
           </ul>
 
-          <h3>Frequency distribution and interpretation</h3>
+          <p class="section-label">Interpretation</p>
           <p>
-            The frequency table showed how many transects fell into each prevalence category at each location, which is a
-            useful way to summarise discrete categorical outcomes before any modelling. Patterns in the table suggest that
-            prevalence varies between locations, likely reflecting different habitat conditions.
-          </p>
-
-          <h3>Learning points</h3>
-          <p>
-            This example strengthened my ability to interpret frequency tables and think carefully about how categorical
-            outcomes can be compared across groups. In healthcare and AI research, similar summaries are used for
-            deterioration categories, triage levels, or model output classes before applying inferential tests or predictive
-            modelling.
+            The paired t-test indicates a statistically significant difference between the two container designs
+            (<strong>p &lt; 0.05</strong>). Because the measurements are taken from the same stores under both conditions,
+            pairing is appropriate and helps control for store-to-store variability.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- DATASET F: DESIGNS -->
-        <div class="card" id="dataset-f">
+        <!-- UNIT 7.2: DATASET G (FILTRATION) PAIRED T-TEST -->
+        <div class="card" id="unit7-datasetg-test">
           <div class="card-header">
-            <h2 class="page-title">Dataset F – Container Designs (Paired t-test)</h2>
-            <div class="meta small-muted">Unit 7 · Comparing two related conditions</div>
+            <h2 class="page-title">Unit 7.2 – Paired t-test (Dataset G: Filtration)</h2>
+            <div class="meta small-muted">Dataset G · Comparing impurity levels for Agent 1 vs Agent 2 across the same batches</div>
           </div>
 
-          <h3>Context and variables</h3>
-          <p>
-            Dataset F comes from a detergent manufacturer that tested two different container designs. Each store sold the
-            product in both designs and the number of items sold was recorded:
-          </p>
+          <p class="section-label">Result</p>
           <ul>
-            <li><strong>Store</strong> – store ID (1–10).</li>
-            <li><strong>Con1</strong> – items sold in Container Design 1.</li>
-            <li><strong>Con2</strong> – items sold in Container Design 2.</li>
+            <li><strong>Paired t-test p-value (two-tailed):</strong> 0.00755</li>
           </ul>
 
-          <h3>Descriptive statistics</h3>
+          <p class="section-label">Interpretation</p>
           <p>
-            Across the ten stores, the mean number of units sold was about <strong>172.6</strong> for Design 1 and
-            <strong>159.4</strong> for Design 2. Because each store is measured under both conditions, the observations are
-            <strong>paired</strong>, and the key quantity is the difference in sales per store (Con1 − Con2). The mean difference was
-            approximately <strong>+13.2 units</strong>.
-          </p>
-
-          <h3>Paired-samples t-test</h3>
-          <ul>
-            <li><strong>H₀:</strong> The mean difference in sales between designs is zero.</li>
-            <li><strong>H₁:</strong> The mean difference in sales is not zero.</li>
-          </ul>
-          <p>
-            The test gave <strong>t ≈ 2.875</strong> with <strong>9 degrees of freedom</strong> and a two-tailed
-            <strong>p-value ≈ 0.0183</strong>. With p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. The evidence suggests that
-            sales under Design 1 and Design 2 differ significantly, with Design 1 performing better in this sample.
-          </p>
-
-          <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
-        </div>
-
-        <!-- DATASET G: FILTRATION -->
-        <div class="card" id="dataset-g">
-          <div class="card-header">
-            <h2 class="page-title">Dataset G – Filtration Agents (Paired t-test)</h2>
-            <div class="meta small-muted">Unit 7 · Paired design and process quality</div>
-          </div>
-
-          <h3>Context and variables</h3>
-          <p>
-            Dataset G relates to the final process in the production of a chemical product. Each batch is filtered using two
-            different agents, and the remaining impurities are measured:
-          </p>
-          <ul>
-            <li><strong>Batch</strong> – batch ID (1–12).</li>
-            <li><strong>Agent1</strong> – impurities after filtration with Agent 1 (parts per 1000).</li>
-            <li><strong>Agent2</strong> – impurities after filtration with Agent 2 (parts per 1000).</li>
-          </ul>
-          <p>
-            Lower impurity values indicate better filtration performance.
-          </p>
-
-          <h3>Descriptive statistics</h3>
-          <p>
-            On average, impurity levels were approximately <strong>8.25</strong> parts per 1000 for Agent 1 and
-            <strong>8.68</strong> for Agent 2. Because each batch was processed with both agents, the data are paired. The mean
-            difference (Agent1 − Agent2) was about <strong>−0.433</strong>, indicating that impurity levels tended to be lower—and
-            therefore better—for Agent 1.
-          </p>
-
-          <h3>Paired-samples t-test</h3>
-          <ul>
-            <li><strong>H₀:</strong> There is no difference in mean impurity between Agent 1 and Agent 2.</li>
-            <li><strong>H₁:</strong> There is a difference in mean impurity between the two agents.</li>
-          </ul>
-          <p>
-            The results gave <strong>t ≈ −3.264</strong> with <strong>11 degrees of freedom</strong> and a two-tailed
-            <strong>p-value ≈ 0.00755</strong>. Since p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. Statistically, there is
-            strong evidence that the agents differ, and the negative mean difference suggests that <strong>Agent 1 leaves fewer
-            impurities</strong> and is therefore more effective in this sample.
+            There is strong evidence that impurity levels differ between the two filtration agents
+            (<strong>p &lt; 0.05</strong>). In this dataset, the paired structure (same batches tested under both agents)
+            supports a paired t-test. The result suggests Agent 1 is associated with lower mean impurity levels.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
@@ -389,36 +233,36 @@
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
-
       </section>
 
       <aside class="sidebar">
+        <!-- Quick navigation -->
         <div class="card">
           <div class="card-header">
             <h3>Quick navigation</h3>
           </div>
           <ul class="clean">
             <li><a href="#unit6-descriptive">Unit 6 – Descriptive Statistics</a></li>
-            <li><a href="#unit7-overview">Unit 7 – Summary Measures &amp; Hypothesis Testing</a></li>
-            <li><a href="#dataset-b">Dataset B – Diets</a></li>
-            <li><a href="#dataset-c">Dataset C – Superplus</a></li>
-            <li><a href="#dataset-d">Dataset D – Brand Preferences</a></li>
-            <li><a href="#dataset-e">Dataset E – Heather Prevalence</a></li>
-            <li><a href="#dataset-f">Dataset F – Container Designs</a></li>
-            <li><a href="#dataset-g">Dataset G – Filtration Agents</a></li>
-            <li><a href="#charts-example">Charts Example (Unit 9)</a></li>
+            <li><a href="#unit7-overview">Unit 7 – Worksheets Overview</a></li>
+            <li><a href="#unit7-datasetb-summary">Unit 7.1 – Diets (Summary)</a></li>
+            <li><a href="#unit7-datasetb-test">Unit 7.2 – Diets (t-test)</a></li>
+            <li><a href="#unit7-datasetd-freq">Unit 7.1 – Brandprefs (Frequencies)</a></li>
+            <li><a href="#unit7-datasetf-test">Unit 7.2 – Designs (Paired t-test)</a></li>
+            <li><a href="#unit7-datasetg-test">Unit 7.2 – Filtration (Paired t-test)</a></li>
+            <li><a href="#charts-example">Unit 9 – Charts Example</a></li>
           </ul>
         </div>
 
+        <!-- Skills highlighted -->
         <div class="card">
           <div class="card-header">
             <h3>Skills highlighted</h3>
           </div>
           <ul class="clean">
-            <li><span class="tag-pill">Analysis</span>Thinking statistically about data in research</li>
-            <li><span class="tag-pill">Inference</span>Applying t-tests and Chi-square tests</li>
-            <li><span class="tag-pill">Design</span>Matching methods to data types</li>
-            <li><span class="tag-pill">Interpretation</span>Connecting numerical results to real-world questions</li>
+            <li><span class="tag-pill">Descriptive</span>Summarising data with location &amp; spread</li>
+            <li><span class="tag-pill">Inference</span>Testing hypotheses with correct assumptions</li>
+            <li><span class="tag-pill">Interpretation</span>Linking p-values to research claims</li>
+            <li><span class="tag-pill">Reporting</span>Explaining results clearly and professionally</li>
           </ul>
         </div>
       </aside>
