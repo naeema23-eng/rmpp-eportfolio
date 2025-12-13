@@ -36,30 +36,30 @@
           </div>
 
           <p>
-            Unit 6 introduced quantitative methods as a way of examining relationships between variables that are measured 
-            numerically and organised into datasets. A dataset can be thought of as a table where each row represents an 
-            observation and each column represents a variable of interest. Before selecting any analytical method, it is 
-            essential to understand the <strong>level of measurement</strong> of each variable—nominal, ordinal, interval 
+            Unit 6 introduced quantitative methods as a way of examining relationships between variables that are measured
+            numerically and organised into datasets. A dataset can be thought of as a table where each row represents an
+            observation and each column represents a variable of interest. Before selecting any analytical method, it is
+            essential to understand the <strong>level of measurement</strong> of each variable—nominal, ordinal, interval
             or ratio—as this determines which statistical techniques are valid.
           </p>
 
           <p>
-            The focus of this unit was on <strong>descriptive statistics</strong>. Measures of location, such as the mean 
-            and median, describe a “typical” observation, while measures of spread, such as the range, variance and standard 
-            deviation, provide insight into the variability or stability of the data. These concepts form the foundation for 
+            The focus of this unit was on <strong>descriptive statistics</strong>. Measures of location, such as the mean
+            and median, describe a “typical” observation, while measures of spread, such as the range, variance and standard
+            deviation, provide insight into the variability or stability of the data. These concepts form the foundation for
             later inferential techniques.
           </p>
 
           <p>
-            In relation to my project on predicting patient deterioration in ambulance settings, descriptive statistics are 
-            crucial for understanding the baseline characteristics of physiological data. For example, summarising typical 
-            heart rate or blood pressure values for stable vs. deteriorating patients helps identify early differences and 
-            potential predictive markers. Examining the spread of values also reveals patterns, outliers and inconsistencies 
+            In relation to my project on predicting patient deterioration in ambulance settings, descriptive statistics are
+            crucial for understanding the baseline characteristics of physiological data. For example, summarising typical
+            heart rate or blood pressure values for stable vs. deteriorating patients helps identify early differences and
+            potential predictive markers. Examining the spread of values also reveals patterns, outliers and inconsistencies
             that may affect model performance.
           </p>
 
           <p>
-            This unit reinforced that effective quantitative research begins with clean data, correct understanding of 
+            This unit reinforced that effective quantitative research begins with clean data, correct understanding of
             measurement levels, and careful descriptive analysis before advancing to more complex modelling.
           </p>
 
@@ -80,16 +80,16 @@
           </p>
 
           <p>
-            The worksheets for this unit used several real-world datasets (B–G) covering weight-loss interventions, income 
+            The worksheets for this unit used several real-world datasets (B–G) covering weight-loss interventions, income
             differences, brand preferences, ecological prevalence, packaging designs and filtration agents. For each dataset,
-            I calculated appropriate summary measures (for example, means and standard deviations), selected a suitable 
+            I calculated appropriate summary measures (for example, means and standard deviations), selected a suitable
             statistical test (independent t-test, paired t-test or chi-square), and interpreted the results in context.
           </p>
 
           <p>
-            The activity showed how descriptive statistics and hypothesis tests work together: summary measures help to 
-            understand patterns in the data, while inferential methods indicate whether those patterns are likely to reflect 
-            genuine population differences or may be due to random variation. The interpretations below document the key 
+            The activity showed how descriptive statistics and hypothesis tests work together: summary measures help to
+            understand patterns in the data, while inferential methods indicate whether those patterns are likely to reflect
+            genuine population differences or may be due to random variation. The interpretations below document the key
             findings for each dataset and link them back to good research practice.
           </p>
 
@@ -115,34 +115,34 @@
 
           <h3>Descriptive statistics</h3>
           <p>
-            Each diet group contained 50 participants. The mean weight loss on Diet A was approximately 
-            <strong>5.34 kg</strong> (SD ≈ <strong>2.54</strong>), while the mean on Diet B was around 
-            <strong>3.71 kg</strong> (SD ≈ <strong>2.77</strong>). This suggests that Diet A produced greater average weight loss, 
+            Each diet group contained 50 participants. The mean weight loss on Diet A was approximately
+            <strong>5.341 kg</strong> (SD ≈ <strong>2.536</strong>), while the mean on Diet B was around
+            <strong>3.710 kg</strong> (SD ≈ <strong>2.769</strong>). This suggests that Diet A produced greater average weight loss,
             but both groups showed noticeable variability, with some individuals even gaining weight.
           </p>
 
           <h3>Hypothesis test and interpretation</h3>
           <p>
-            To determine whether this difference is statistically significant, I used an 
-            <strong>independent-samples t-test</strong>:
+            To determine whether this difference is statistically significant, I used an
+            <strong>independent-samples t-test</strong> (equal variances supported by an F-test):
           </p>
           <ul>
             <li><strong>H₀:</strong> There is no difference in mean weight loss between Diet A and Diet B (μ<sub>A</sub> = μ<sub>B</sub>).</li>
             <li><strong>H₁:</strong> The mean weight loss differs between the two diets (μ<sub>A</sub> ≠ μ<sub>B</sub>).</li>
           </ul>
           <p>
-            The test produced a t-statistic of approximately <strong>t = 3.07</strong> with 
-            <strong>98 degrees of freedom</strong> and a two-tailed <strong>p-value ≈ 0.0028</strong>. At the 5% significance level,
-            this allowed me to <strong>reject the null hypothesis</strong>. Statistically, there is strong evidence that the 
+            The test produced a t-statistic of approximately <strong>t = 3.072</strong> with
+            <strong>98 degrees of freedom</strong> and a two-tailed <strong>p-value ≈ 0.00275</strong>. At the 5% significance level,
+            this allowed me to <strong>reject the null hypothesis</strong>. Statistically, there is strong evidence that the
             population mean weight loss differs between the diets, with Diet A performing better in this sample.
           </p>
 
           <h3>Learning points</h3>
           <p>
-            This exercise showed how descriptive statistics can highlight potential differences, but hypothesis testing is 
-            required to judge whether those differences are likely to be real rather than random. It also reinforced key 
+            This exercise showed how descriptive statistics can highlight potential differences, but hypothesis testing is
+            required to judge whether those differences are likely to be real rather than random. It also reinforced key
             ideas such as setting up H₀ and H₁, using an appropriate test for independent groups, and interpreting p-values
-            in the context of the research question. In my own work with physiological data, I can apply the same logic to 
+            in the context of the research question. In my own work with physiological data, I can apply the same logic to
             compare, for example, the performance of different early-warning scores or machine-learning models.
           </p>
 
@@ -167,9 +167,9 @@
 
           <h3>Descriptive statistics</h3>
           <p>
-            The sample contained 60 males and 60 females. The mean male income was about 
-            <strong>£52.91k</strong> (SD ≈ <strong>£15.27k</strong>), while the mean female income was roughly 
-            <strong>£44.23k</strong> (SD ≈ <strong>£13.79k</strong>). On average, male cardholders in this sample earn more, 
+            The sample contained 60 males and 60 females. The mean male income was about
+            <strong>£52.91k</strong> (SD ≈ <strong>£15.27k</strong>), while the mean female income was roughly
+            <strong>£44.23k</strong> (SD ≈ <strong>£13.79k</strong>). On average, male cardholders in this sample earn more,
             but there is substantial overlap between the two distributions, which is why inferential analysis is needed.
           </p>
 
@@ -182,18 +182,18 @@
             <li><strong>H₁:</strong> Mean income differs by sex (μ<sub>M</sub> ≠ μ<sub>F</sub>).</li>
           </ul>
           <p>
-            The test gave <strong>t ≈ 3.27</strong> with <strong>118 degrees of freedom</strong> and a two-tailed 
-            <strong>p-value ≈ 0.0014</strong>. With p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. There is strong 
-            statistical evidence that male and female mean incomes differ in the population, with higher average income 
+            The test gave <strong>t ≈ 3.27</strong> with <strong>118 degrees of freedom</strong> and a two-tailed
+            <strong>p-value ≈ 0.0014</strong>. With p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. There is strong
+            statistical evidence that male and female mean incomes differ in the population, with higher average income
             for men in this dataset.
           </p>
 
           <h3>Learning points</h3>
           <p>
-            This example emphasised that even when distributions overlap, statistically significant differences can exist 
-            at the population level. It also illustrated how to work with ratio-level financial data and interpret the 
-            results carefully, avoiding over-generalisation. For my future research with AI models, similar tests can be 
-            used to compare performance across subgroups (for example, different hospital sites or patient cohorts) to 
+            This example emphasised that even when distributions overlap, statistically significant differences can exist
+            at the population level. It also illustrated how to work with ratio-level financial data and interpret the
+            results carefully, avoiding over-generalisation. For my future research with AI models, similar tests can be
+            used to compare performance across subgroups (for example, different hospital sites or patient cohorts) to
             check for fairness and robustness.
           </p>
 
@@ -219,39 +219,28 @@
 
           <h3>Descriptive summary</h3>
           <p>
-            Overall brand preferences (across both areas) were:
-          </p>
-          <ul>
-            <li>Brand A: 30 respondents</li>
-            <li>Brand B: 47 respondents</li>
-            <li>Other brands: 83 respondents</li>
-          </ul>
-          <p>
-            A cross-tabulation by area showed some differences in the pattern of preferences between Area 1 and Area 2.
+            A cross-tabulation by area showed some differences in raw counts, so a Chi-square test was used to check
+            whether any differences were statistically meaningful.
           </p>
 
           <h3>Chi-square test of independence</h3>
-          <p>
-            Because both variables are nominal, I used a <strong>Chi-square test of independence</strong> to examine whether 
-            brand preference is associated with area:
-          </p>
           <ul>
             <li><strong>H₀:</strong> Brand preference is independent of area.</li>
             <li><strong>H₁:</strong> Brand preference is associated with area.</li>
           </ul>
           <p>
-            Using the 2×3 contingency table (Area × Brand), the Chi-square statistic was approximately 
-            <strong>χ² ≈ 3.29</strong> with <strong>2 degrees of freedom</strong>, giving a <strong>p-value ≈ 0.19</strong>. Because 
-            p &gt; 0.05, I <strong>failed to reject the null hypothesis</strong>. Statistically, there is not enough evidence to say 
+            Using the 2×3 contingency table (Area × Brand), the Chi-square statistic was approximately
+            <strong>χ² ≈ 3.29</strong> with <strong>2 degrees of freedom</strong>, giving a <strong>p-value ≈ 0.193</strong>. Because
+            p &gt; 0.05, I <strong>failed to reject the null hypothesis</strong>. Statistically, there is not enough evidence to say
             that brand preference differs significantly between the two areas.
           </p>
 
           <h3>Learning points</h3>
           <p>
-            This dataset helped me practise working with purely categorical data and reinforced when to use a Chi-square test. 
-            It also highlighted the difference between apparent differences in raw counts and statistically significant 
-            differences. In AI and healthcare, similar contingency-table approaches can be applied to outcomes such as 
-            “deteriorated vs. stable” across different hospitals or triage categories to test whether patterns are random or 
+            This dataset helped me practise working with purely categorical data and reinforced when to use a Chi-square test.
+            It also highlighted the difference between apparent differences in raw counts and statistically significant
+            differences. In AI and healthcare, similar contingency-table approaches can be applied to outcomes such as
+            “deteriorated vs. stable” across different hospitals or triage categories to test whether patterns are random or
             meaningful.
           </p>
 
@@ -275,34 +264,19 @@
             <li><strong>Prevalence</strong> – Absent, Sparse or Abundant.</li>
           </ul>
 
-          <h3>Frequency distribution</h3>
+          <h3>Frequency distribution and interpretation</h3>
           <p>
-            The frequency table showed how many transects fell into each prevalence category at each location.
-            For example, heather was more often <em>abundant</em> in one location and more often <em>absent</em> in the other, 
-            suggesting that habitat conditions differ between sites.
-          </p>
-
-          <h3>Chi-square test of independence</h3>
-          <p>
-            Again, both variables are categorical, so I used a <strong>Chi-square test of independence</strong>:
-          </p>
-          <ul>
-            <li><strong>H₀:</strong> Heather prevalence is independent of location.</li>
-            <li><strong>H₁:</strong> Heather prevalence is associated with location.</li>
-          </ul>
-          <p>
-            Based on the 3×2 table (Prevalence × Location), the Chi-square statistic was approximately 
-            <strong>χ² ≈ 12.78</strong> with <strong>2 degrees of freedom</strong>, giving a <strong>p-value ≈ 0.0017</strong>. Since 
-            p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. There is strong evidence that heather prevalence depends on 
-            location: one area has a much healthier distribution of the species than the other.
+            The frequency table showed how many transects fell into each prevalence category at each location, which is a
+            useful way to summarise discrete categorical outcomes before any modelling. Patterns in the table suggest that
+            prevalence varies between locations, likely reflecting different habitat conditions.
           </p>
 
           <h3>Learning points</h3>
           <p>
-            This example showed how a frequency table can be used not only to describe a distribution but also to test 
-            statistically whether two categorical variables are related. The logic transfers directly to medical and AI 
-            contexts, where we might examine associations between risk categories and outcomes, or between triage levels and 
-            deterioration, before moving on to more complex modelling.
+            This example strengthened my ability to interpret frequency tables and think carefully about how categorical
+            outcomes can be compared across groups. In healthcare and AI research, similar summaries are used for
+            deterioration categories, triage levels, or model output classes before applying inferential tests or predictive
+            modelling.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
@@ -328,33 +302,21 @@
 
           <h3>Descriptive statistics</h3>
           <p>
-            Across the ten stores, the mean number of units sold was about <strong>172.6</strong> for Design 1 and 
-            <strong>159.4</strong> for Design 2. Because each store is measured under both conditions, the observations are 
-            <strong>paired</strong>, and the key quantity is the difference in sales per store (Con1 − Con2). The mean difference was 
-            approximately <strong>+13.2 units</strong>, with some variation between stores.
+            Across the ten stores, the mean number of units sold was about <strong>172.6</strong> for Design 1 and
+            <strong>159.4</strong> for Design 2. Because each store is measured under both conditions, the observations are
+            <strong>paired</strong>, and the key quantity is the difference in sales per store (Con1 − Con2). The mean difference was
+            approximately <strong>+13.2 units</strong>.
           </p>
 
           <h3>Paired-samples t-test</h3>
-          <p>
-            To test whether the new design changed sales, I used a <strong>paired-samples t-test</strong> on the differences:
-          </p>
           <ul>
             <li><strong>H₀:</strong> The mean difference in sales between designs is zero.</li>
             <li><strong>H₁:</strong> The mean difference in sales is not zero.</li>
           </ul>
           <p>
-            The test gave <strong>t ≈ 2.87</strong> with <strong>9 degrees of freedom</strong> and a two-tailed 
-            <strong>p-value ≈ 0.018</strong>. With p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. The evidence suggests that 
-            sales under Design 1 and Design 2 differ significantly, with Design 1 actually performing better in this sample.
-          </p>
-
-          <h3>Learning points</h3>
-          <p>
-            This dataset emphasised the importance of recognising when data are paired and choosing the appropriate test. 
-            Treating the two sets of sales figures as independent would ignore the store-level pairing and reduce statistical 
-            power. In healthcare research, similar paired structures appear when measuring vital signs before and after an 
-            intervention on the same patients, or when comparing two algorithms on the same set of cases. Correctly handling 
-            paired data is therefore essential for valid inference.
+            The test gave <strong>t ≈ 2.875</strong> with <strong>9 degrees of freedom</strong> and a two-tailed
+            <strong>p-value ≈ 0.0183</strong>. With p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. The evidence suggests that
+            sales under Design 1 and Design 2 differ significantly, with Design 1 performing better in this sample.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
@@ -369,7 +331,7 @@
 
           <h3>Context and variables</h3>
           <p>
-            Dataset G relates to the final process in the production of a chemical product. Each batch is filtered using two 
+            Dataset G relates to the final process in the production of a chemical product. Each batch is filtered using two
             different agents, and the remaining impurities are measured:
           </p>
           <ul>
@@ -383,33 +345,22 @@
 
           <h3>Descriptive statistics</h3>
           <p>
-            On average, impurity levels were approximately <strong>8.25</strong> parts per 1000 for Agent 1 and 
-            <strong>8.68</strong> for Agent 2. Because each batch was processed with both agents, the data are paired. The mean 
-            difference (Agent1 − Agent2) was about <strong>−0.43</strong>, indicating that impurity levels tended to be slightly 
-            lower—and therefore better—for Agent 1.
+            On average, impurity levels were approximately <strong>8.25</strong> parts per 1000 for Agent 1 and
+            <strong>8.68</strong> for Agent 2. Because each batch was processed with both agents, the data are paired. The mean
+            difference (Agent1 − Agent2) was about <strong>−0.433</strong>, indicating that impurity levels tended to be lower—and
+            therefore better—for Agent 1.
           </p>
 
           <h3>Paired-samples t-test</h3>
-          <p>
-            I again used a <strong>paired-samples t-test</strong> to test whether the average difference was zero:
-          </p>
           <ul>
             <li><strong>H₀:</strong> There is no difference in mean impurity between Agent 1 and Agent 2.</li>
             <li><strong>H₁:</strong> There is a difference in mean impurity between the two agents.</li>
           </ul>
           <p>
-            The results gave <strong>t ≈ −3.26</strong> with <strong>11 degrees of freedom</strong> and a two-tailed 
-            <strong>p-value ≈ 0.0020</strong>. Since p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. Statistically, there is 
-            strong evidence that the agents differ, and the negative mean difference suggests that <strong>Agent 1 leaves fewer 
+            The results gave <strong>t ≈ −3.264</strong> with <strong>11 degrees of freedom</strong> and a two-tailed
+            <strong>p-value ≈ 0.00755</strong>. Since p &lt; 0.05, I <strong>rejected the null hypothesis</strong>. Statistically, there is
+            strong evidence that the agents differ, and the negative mean difference suggests that <strong>Agent 1 leaves fewer
             impurities</strong> and is therefore more effective in this sample.
-          </p>
-
-          <h3>Learning points</h3>
-          <p>
-            This dataset reinforced the logic of paired tests in an industrial context and showed how small numerical 
-            differences can still be statistically meaningful when measurement variability is low. In my AI and healthcare 
-            work, similar paired comparisons will be important when evaluating alternative models, devices or workflows on 
-            the same patient data, and when deciding which option offers the best balance of performance and reliability.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
@@ -442,7 +393,6 @@
       </section>
 
       <aside class="sidebar">
-        <!-- Quick navigation -->
         <div class="card">
           <div class="card-header">
             <h3>Quick navigation</h3>
@@ -460,7 +410,6 @@
           </ul>
         </div>
 
-        <!-- Skills highlighted -->
         <div class="card">
           <div class="card-header">
             <h3>Skills highlighted</h3>
@@ -481,3 +430,4 @@
   </div>
 </body>
 </html>
+
