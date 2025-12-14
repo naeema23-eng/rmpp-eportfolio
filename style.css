@@ -13,6 +13,8 @@
   --max-width: 1100px;
 }
 
+/* Reset & base */
+
 *,
 *::before,
 *::after {
@@ -32,7 +34,9 @@ body {
   padding: 24px 16px 40px;
 }
 
-/* Header & nav */
+/* ======================
+   Header & Navigation
+   ====================== */
 
 header.site-header {
   margin-bottom: 20px;
@@ -97,7 +101,9 @@ nav.main-nav a.active {
   color: #ffffff;
 }
 
-/* Layout */
+/* ======================
+   Layout
+   ====================== */
 
 .page-grid {
   display: grid;
@@ -112,7 +118,9 @@ nav.main-nav a.active {
   }
 }
 
-/* Cards */
+/* ======================
+   Cards
+   ====================== */
 
 .card {
   background: var(--bg-card);
@@ -143,7 +151,9 @@ nav.main-nav a.active {
   color: var(--text-muted);
 }
 
-/* Typography */
+/* ======================
+   Typography
+   ====================== */
 
 h1, h2, h3, h4 {
   font-family: "Georgia", "Times New Roman", serif;
@@ -155,15 +165,77 @@ h2.page-title {
 }
 
 p {
-  line-height: 1.6
-/* ==== Local page navigation (Reflections, etc.) ==== */
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+.small-muted {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.section-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-top: 1.2rem;
+}
+
+/* ======================
+   Sidebar
+   ====================== */
+
+.sidebar .card ul.clean {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .card ul.clean li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .card ul.clean a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.sidebar .card ul.clean a:hover,
+.sidebar .card ul.clean a:focus {
+  text-decoration: underline;
+}
+
+/* Tag pills */
+
+.tag-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 6px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #5a4630;
+}
+
+/* ======================
+   Local page navigation
+   ====================== */
 
 .local-nav {
   margin-bottom: 1.5rem;
-}
-
-.local-nav .page-title {
-  margin-bottom: 0.25rem;
 }
 
 .horizontal-links {
@@ -181,7 +253,7 @@ p {
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  background-color: #f9f4ec; /* soft beige */
+  background-color: #f9f4ec;
   color: #444;
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
@@ -192,7 +264,9 @@ p {
   border-color: rgba(0, 0, 0, 0.18);
 }
 
-/* Back-to-top link */
+/* ======================
+   Back to top
+   ====================== */
 
 .back-to-top {
   margin-top: 1.5rem;
@@ -211,15 +285,14 @@ p {
   color: #444;
 }
 
-/* Sidebar quick navigation */
+/* ======================
+   Footer
+   ====================== */
 
-.sidebar .card ul.clean a {
-  text-decoration: none;
-  color: #444;
-  font-size: 0.9rem;
+.site-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
-.sidebar .card ul.clean a:hover,
-.sidebar .card ul.clean a:focus {
-  text-decoration: underline;
-}
