@@ -36,176 +36,177 @@
           </div>
 
           <p>
-            Unit 6 introduced quantitative methods as a way of examining relationships between variables that are measured
-            numerically and organised into datasets. A dataset can be thought of as a table where each row represents an
-            observation and each column represents a variable of interest. Before selecting any analytical method, it is
-            essential to understand the <strong>level of measurement</strong> of each variable—nominal, ordinal, interval
+            Unit 6 introduced quantitative methods as a way of examining relationships between variables that are measured 
+            numerically and organised into datasets. A dataset can be thought of as a table where each row represents an 
+            observation and each column represents a variable of interest. Before selecting any analytical method, it is 
+            essential to understand the <strong>level of measurement</strong> of each variable—nominal, ordinal, interval 
             or ratio—as this determines which statistical techniques are valid.
           </p>
 
           <p>
-            The focus of this unit was on <strong>descriptive statistics</strong>. Measures of location, such as the mean
-            and median, describe a “typical” observation, while measures of spread, such as the range, variance and standard
-            deviation, provide insight into the variability or stability of the data. These concepts form the foundation for
+            The focus of this unit was on <strong>descriptive statistics</strong>. Measures of location, such as the mean 
+            and median, describe a “typical” observation, while measures of spread, such as the range, variance and standard 
+            deviation, provide insight into the variability or stability of the data. These concepts form the foundation for 
             later inferential techniques.
           </p>
 
           <p>
-            In relation to my project on predicting patient deterioration in ambulance settings, descriptive statistics are
-            crucial for understanding the baseline characteristics of physiological data. For example, summarising typical
-            heart rate or blood pressure values for stable vs. deteriorating patients helps identify early differences and
-            potential predictive markers. Examining the spread of values also reveals patterns, outliers and inconsistencies
+            In relation to my project on predicting patient deterioration in ambulance settings, descriptive statistics are 
+            crucial for understanding the baseline characteristics of physiological data. For example, summarising typical 
+            heart rate or blood pressure values for stable vs. deteriorating patients helps identify early differences and 
+            potential predictive markers. Examining the spread of values also reveals patterns, outliers and inconsistencies 
             that may affect model performance.
           </p>
 
           <p>
-            This unit reinforced that effective quantitative research begins with clean data, correct understanding of
+            This unit reinforced that effective quantitative research begins with clean data, correct understanding of 
             measurement levels, and careful descriptive analysis before advancing to more complex modelling.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- UNIT 7: WORKSHEETS OVERVIEW -->
-        <div class="card" id="unit7-overview">
+
+        <!-- UNIT 7: INFERENTIAL STATISTICS + WORKSHEETS -->
+        <div class="card" id="unit7-inferential">
           <div class="card-header">
-            <h2 class="page-title">Unit 7 – Inferential Statistics: Worksheets &amp; Interpretation</h2>
-            <div class="meta small-muted">Unit 7 · Summary measures, hypothesis testing, and evidence-based conclusions</div>
+            <h2 class="page-title">Unit 7 – Inferential Statistics & Hypothesis Testing (Worksheets)</h2>
+            <div class="meta small-muted">Unit 7 · Inference, probability, hypothesis tests</div>
           </div>
 
           <p>
-            Unit 7 built on descriptive statistics and introduced <strong>inferential statistics</strong> and
-            <strong>hypothesis testing</strong>. The key learning was that conclusions about a wider population are made from
-            sample data under uncertainty. This requires correctly selecting tests (independent vs. paired), understanding
-            assumptions (such as equal variances), and interpreting <em>p</em>-values as evidence rather than “proof”.
+            Unit 7 introduced inferential statistics as the process of making evidence-based conclusions about a population
+            using a sample, while recognising uncertainty and quantifying it using probability. The main practical focus was
+            applying hypothesis testing to determine whether observed differences are likely to reflect real effects rather
+            than random variation.
           </p>
 
-          <p>
-            Below, I document my completed worksheet outputs (7.1 Summary Measures and 7.2 Hypothesis Testing), using the
-            provided datasets. Each card includes a concise interpretation to demonstrate understanding of the results.
-          </p>
+          <p class="section-label">Completed worksheet outputs (Unit 7.1 + 7.2)</p>
+
+          <!-- Dataset B -->
+          <div class="card" id="unit7-dataset-b">
+            <div class="card-header">
+              <h3>Dataset B – Diets (Summary Measures + t-test)</h3>
+              <div class="meta small-muted">Weight loss comparison: Diet A vs Diet B</div>
+            </div>
+
+            <ul>
+              <li><strong>Diet B mean:</strong> 3.710</li>
+              <li><strong>Diet B standard deviation:</strong> 2.769041999</li>
+              <li><strong>Diet B median:</strong> 3.745</li>
+              <li><strong>Diet B min / max:</strong> -4.148 / 10.539</li>
+              <li><strong>Q1 / Q3:</strong> 1.953 / 5.4035</li>
+              <li><strong>IQR:</strong> 3.4505</li>
+            </ul>
+
+            <p class="section-label">Hypothesis testing</p>
+            <ul>
+              <li><strong>Variance check (F-test p-value):</strong> 0.539902956</li>
+              <li><strong>Two-sample t-test (equal variances) p-value:</strong> 0.002751544</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> Diet B shows a moderate average weight loss with noticeable variability (including some
+              weight gain). The t-test result (p &lt; 0.05) indicates a statistically significant difference in mean weight loss between Diet A and Diet B.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
+
+          <!-- Dataset D -->
+          <div class="card" id="unit7-dataset-d">
+            <div class="card-header">
+              <h3>Dataset D – Brand Preferences (Frequencies)</h3>
+              <div class="meta small-muted">Nominal data summary: Brand A, Brand B, Other</div>
+            </div>
+
+            <ul>
+              <li><strong>Frequency of Brand A:</strong> 19</li>
+              <li><strong>Frequency of Brand B:</strong> 30</li>
+              <li><strong>Frequency of Other:</strong> 41</li>
+              <li><strong>Total responses:</strong> 90</li>
+              <li><strong>Example percentage (Brand A):</strong> 21.11111111%</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> “Other” brands are most frequently preferred, followed by Brand B, then Brand A.
+              Frequency summaries describe the pattern, but they do not on their own determine whether differences between groups are statistically significant.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
+
+          <!-- Dataset F -->
+          <div class="card" id="unit7-dataset-f">
+            <div class="card-header">
+              <h3>Dataset F – Designs (Paired t-test)</h3>
+              <div class="meta small-muted">Container Design 1 vs Design 2 across the same stores</div>
+            </div>
+
+            <ul>
+              <li><strong>Paired t-test p-value:</strong> 0.018335635</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> The paired t-test indicates a statistically significant difference between the two container
+              designs (p &lt; 0.05), suggesting design choice affects sales when comparing within the same stores.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
+
+          <!-- Dataset G -->
+          <div class="card" id="unit7-dataset-g">
+            <div class="card-header">
+              <h3>Dataset G – Filtration (Paired comparison)</h3>
+              <div class="meta small-muted">Agent 1 vs Agent 2 impurities across the same batches</div>
+            </div>
+
+            <ul>
+              <li><strong>p-value:</strong> 0.007545995</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> There is strong evidence that impurity levels differ between the two filtration agents (p &lt; 0.05).
+              Based on the sample, Agent 1 produces lower mean impurity levels.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- UNIT 7.1: DATASET B (DIETS) SUMMARY MEASURES -->
-        <div class="card" id="unit7-datasetb-summary">
+
+        <!-- Statistics Worksheets (Units 7–10) -->
+        <div class="card" id="stats-worksheets">
           <div class="card-header">
-            <h2 class="page-title">Unit 7.1 – Summary Measures (Dataset B: Diets)</h2>
-            <div class="meta small-muted">Dataset B · Measures of location and spread</div>
+            <h2 class="page-title">Statistics Worksheets (Units 7–10)</h2>
+            <div class="meta small-muted">
+              Units 7–10 · Statistical analysis and interpretation
+            </div>
           </div>
-
-          <p class="section-label">Key results (Diet B)</p>
-          <ul>
-            <li><strong>Mean:</strong> 3.710</li>
-            <li><strong>Standard deviation:</strong> 2.769</li>
-            <li><strong>Median:</strong> 3.745</li>
-            <li><strong>Minimum:</strong> −4.148</li>
-            <li><strong>Maximum:</strong> 10.539</li>
-            <li><strong>Q1:</strong> 1.953</li>
-            <li><strong>Q3:</strong> 5.4035</li>
-            <li><strong>IQR:</strong> 3.4505</li>
-          </ul>
-
-          <p class="section-label">Interpretation</p>
           <p>
-            Diet B shows a moderate average weight loss but <strong>relatively high variability</strong>. While some
-            participants experienced substantial weight reduction, others showed minimal or negative outcomes. The spread
-            (SD and IQR) suggests meaningful individual differences in response, which supports the need for inferential
-            testing when comparing Diet A vs. Diet B.
+            Later in the module, Units 7–10 will focus on statistical concepts that support sound research design.
+            This page is ready to store the completed worksheets and a short commentary once those activities are done.
           </p>
 
-          <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
-        </div>
-
-        <!-- UNIT 7.2: DATASET B (DIETS) HYPOTHESIS TEST -->
-        <div class="card" id="unit7-datasetb-test">
-          <div class="card-header">
-            <h2 class="page-title">Unit 7.2 – Hypothesis Testing (Dataset B: Diets)</h2>
-            <div class="meta small-muted">Dataset B · F-test (variance) + independent t-test (two-tailed)</div>
-          </div>
-
-          <p class="section-label">Results</p>
+          <p class="section-label">Planned coverage</p>
           <ul>
-            <li><strong>Variance check (F-test p-value):</strong> 0.5399</li>
-            <li><strong>Independent t-test p-value (equal variances, two-tailed):</strong> 0.00275</li>
+            <li>Descriptive statistics (mean, median, standard deviation, ranges)</li>
+            <li>Basic inferential ideas (significance, p-values, simple tests)</li>
+            <li>Working with variables and relationships between them</li>
+            <li>Interpreting outputs in relation to research questions</li>
           </ul>
 
-          <p class="section-label">Conclusion</p>
           <p>
-            Since <strong>p &lt; 0.05</strong> for the independent t-test, the null hypothesis is rejected. There is a
-            statistically significant difference in mean weight loss between Diet A and Diet B. The variance test result
-            (p &gt; 0.05) supports the use of an equal-variance t-test in this comparison.
+            After I complete each worksheet, I will add a concise summary here that explains:
           </p>
-
-          <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
-        </div>
-
-        <!-- UNIT 7.1: DATASET D (BRAND PREFS) FREQUENCIES -->
-        <div class="card" id="unit7-datasetd-freq">
-          <div class="card-header">
-            <h2 class="page-title">Unit 7.1 – Frequency Summary (Dataset D: Brand Preferences)</h2>
-            <div class="meta small-muted">Dataset D · Frequency table and percentage interpretation</div>
-          </div>
-
-          <p class="section-label">Results (Area 2)</p>
           <ul>
-            <li><strong>Brand A:</strong> 19 (21.11%)</li>
-            <li><strong>Brand B:</strong> 30 (33.33%)</li>
-            <li><strong>Other:</strong> 41 (45.56%)</li>
-            <li><strong>Total responses:</strong> 90</li>
+            <li>Which dataset was used</li>
+            <li>Which statistical techniques were applied</li>
+            <li>What the main findings were and how they relate to research methods</li>
           </ul>
-
-          <p class="section-label">Interpretation</p>
-          <p>
-            In Area 2, <strong>“Other” brands are most frequently preferred</strong>, followed by Brand B and Brand A.
-            This provides a clear descriptive snapshot of preferences; however, frequency summaries alone do not establish
-            whether differences are statistically significant or whether preference patterns generalise beyond this sample.
-          </p>
-
-          <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
-        </div>
-
-        <!-- UNIT 7.2: DATASET F (DESIGNS) PAIRED T-TEST -->
-        <div class="card" id="unit7-datasetf-test">
-          <div class="card-header">
-            <h2 class="page-title">Unit 7.2 – Paired t-test (Dataset F: Designs)</h2>
-            <div class="meta small-muted">Dataset F · Comparing two container designs across the same stores</div>
-          </div>
-
-          <p class="section-label">Result</p>
-          <ul>
-            <li><strong>Paired t-test p-value (two-tailed):</strong> 0.01834</li>
-          </ul>
-
-          <p class="section-label">Interpretation</p>
-          <p>
-            The paired t-test indicates a statistically significant difference between the two container designs
-            (<strong>p &lt; 0.05</strong>). Because the measurements are taken from the same stores under both conditions,
-            pairing is appropriate and helps control for store-to-store variability.
-          </p>
-
-          <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
-        </div>
-
-        <!-- UNIT 7.2: DATASET G (FILTRATION) PAIRED T-TEST -->
-        <div class="card" id="unit7-datasetg-test">
-          <div class="card-header">
-            <h2 class="page-title">Unit 7.2 – Paired t-test (Dataset G: Filtration)</h2>
-            <div class="meta small-muted">Dataset G · Comparing impurity levels for Agent 1 vs Agent 2 across the same batches</div>
-          </div>
-
-          <p class="section-label">Result</p>
-          <ul>
-            <li><strong>Paired t-test p-value (two-tailed):</strong> 0.00755</li>
-          </ul>
-
-          <p class="section-label">Interpretation</p>
-          <p>
-            There is strong evidence that impurity levels differ between the two filtration agents
-            (<strong>p &lt; 0.05</strong>). In this dataset, the paired structure (same batches tested under both agents)
-            supports a paired t-test. The result suggests Agent 1 is associated with lower mean impurity levels.
-          </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
@@ -243,13 +244,15 @@
           </div>
           <ul class="clean">
             <li><a href="#unit6-descriptive">Unit 6 – Descriptive Statistics</a></li>
-            <li><a href="#unit7-overview">Unit 7 – Worksheets Overview</a></li>
-            <li><a href="#unit7-datasetb-summary">Unit 7.1 – Diets (Summary)</a></li>
-            <li><a href="#unit7-datasetb-test">Unit 7.2 – Diets (t-test)</a></li>
-            <li><a href="#unit7-datasetd-freq">Unit 7.1 – Brandprefs (Frequencies)</a></li>
-            <li><a href="#unit7-datasetf-test">Unit 7.2 – Designs (Paired t-test)</a></li>
-            <li><a href="#unit7-datasetg-test">Unit 7.2 – Filtration (Paired t-test)</a></li>
-            <li><a href="#charts-example">Unit 9 – Charts Example</a></li>
+
+            <li><a href="#unit7-inferential">Unit 7 – Inferential Statistics (Worksheets)</a></li>
+            <li><a href="#unit7-dataset-b">Dataset B – Diets</a></li>
+            <li><a href="#unit7-dataset-d">Dataset D – Brand Preferences</a></li>
+            <li><a href="#unit7-dataset-f">Dataset F – Designs</a></li>
+            <li><a href="#unit7-dataset-g">Dataset G – Filtration</a></li>
+
+            <li><a href="#stats-worksheets">Statistics Worksheets (Units 7–10)</a></li>
+            <li><a href="#charts-example">Charts Example (Unit 9)</a></li>
           </ul>
         </div>
 
@@ -259,10 +262,10 @@
             <h3>Skills highlighted</h3>
           </div>
           <ul class="clean">
-            <li><span class="tag-pill">Descriptive</span>Summarising data with location &amp; spread</li>
-            <li><span class="tag-pill">Inference</span>Testing hypotheses with correct assumptions</li>
-            <li><span class="tag-pill">Interpretation</span>Linking p-values to research claims</li>
-            <li><span class="tag-pill">Reporting</span>Explaining results clearly and professionally</li>
+            <li><span class="tag-pill">Analysis</span>Thinking statistically about data in research</li>
+            <li><span class="tag-pill">Tools</span>Using software outputs as evidence</li>
+            <li><span class="tag-pill">Visualisation</span>Communicating findings with appropriate charts</li>
+            <li><span class="tag-pill">Interpretation</span>Connecting numerical results to real-world questions</li>
           </ul>
         </div>
       </aside>
@@ -274,4 +277,5 @@
   </div>
 </body>
 </html>
+
 
