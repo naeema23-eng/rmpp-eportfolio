@@ -1,7 +1,0 @@
-This folder stores image assets for the RMPP e-Portfolio.
-
-Images are organised by unit (e.g., Unit 8 charts) and are referenced
-from HTML files using relative paths such as:
-
-assets/images/filename.png
-
