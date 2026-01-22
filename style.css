@@ -13,7 +13,9 @@
   --max-width: 1100px;
 }
 
-/* Reset & base */
+/* ======================
+   Reset & base
+   ====================== */
 
 *,
 *::before,
@@ -193,7 +195,7 @@ li {
 }
 
 /* ======================
-   Tables (site-wide upgrade)
+   Tables (A+ site-wide)
    ====================== */
 
 table {
@@ -211,7 +213,6 @@ table {
 thead th {
   text-align: left;
   font-size: 0.9rem;
-  letter-spacing: 0.02em;
   padding: 12px 14px;
   color: #3b2f22;
   background: linear-gradient(180deg, #fbf6ee, #f4efe7);
@@ -220,9 +221,7 @@ thead th {
 
 tbody td {
   padding: 12px 14px;
-  vertical-align: top;
   border-bottom: 1px solid rgba(226, 222, 213, 0.9);
-  color: #3a3a3a;
 }
 
 tbody tr:nth-child(even) td {
@@ -235,28 +234,6 @@ tbody tr:hover td {
 
 tbody tr:last-child td {
   border-bottom: none;
-}
-
-/* Better table readability on small screens */
-@media (max-width: 700px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-  thead {
-    display: none;
-  }
-  tbody tr {
-    border-bottom: 1px solid rgba(201, 169, 124, 0.25);
-    margin-bottom: 12px;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  tbody td {
-    border-bottom: 1px solid rgba(226, 222, 213, 0.9);
-  }
-  tbody td:last-child {
-    border-bottom: none;
-  }
 }
 
 /* ======================
@@ -279,8 +256,7 @@ tbody tr:last-child td {
   font-size: 0.9rem;
 }
 
-.sidebar .card ul.clean a:hover,
-.sidebar .card ul.clean a:focus {
+.sidebar .card ul.clean a:hover {
   text-decoration: underline;
 }
 
@@ -318,8 +294,14 @@ tbody tr:last-child td {
   background: #fbf7f0;
   border: 1px solid rgba(201, 169, 124, 0.25);
   border-radius: 14px;
-  padding: 12px 12px 10px;
+  padding: 12px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evidence-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 .evidence-title {
@@ -329,22 +311,15 @@ tbody tr:last-child td {
   color: #3b2f22;
 }
 
-.evidence-link {
-  display: block;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background: #fff;
-}
-
 .evidence-card img {
   width: 100%;
   height: auto;
+  border-radius: 12px;
   display: block;
 }
 
 .evidence-caption {
-  margin: 8px 2px 0;
+  margin-top: 8px;
   font-size: 0.85rem;
   color: var(--text-muted);
 }
@@ -353,8 +328,14 @@ tbody tr:last-child td {
   grid-column: 1 / -1;
 }
 
+/* Larger histogram */
+.evidence-img-large {
+  max-height: 520px;
+  object-fit: contain;
+}
+
 /* ======================
-   Reflection grid (Unit 8)
+   Reflection grid
    ====================== */
 
 .reflection-grid {
@@ -374,50 +355,7 @@ tbody tr:last-child td {
   background: #fbf7f0;
   border: 1px solid rgba(201, 169, 124, 0.25);
   border-radius: 14px;
-  padding: 14px 14px 10px;
-}
-
-.reflection-item h4 {
-  margin: 0 0 8px;
-  font-size: 1.05rem;
-}
-
-.outcomes-list {
-  margin-top: 8px;
-}
-
-/* ======================
-   Local page navigation
-   ====================== */
-
-.local-nav {
-  margin-bottom: 1.5rem;
-}
-
-.horizontal-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 0.75rem 0 0.25rem;
-  padding: 0;
-  list-style: none;
-}
-
-.horizontal-links li a {
-  font-size: 0.9rem;
-  text-decoration: none;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background-color: #f9f4ec;
-  color: #444;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
-}
-
-.horizontal-links li a:hover,
-.horizontal-links li a:focus {
-  background-color: #f1e5d4;
-  border-color: rgba(0, 0, 0, 0.18);
+  padding: 14px;
 }
 
 /* ======================
@@ -435,10 +373,8 @@ tbody tr:last-child td {
   color: #777;
 }
 
-.back-to-top a:hover,
-.back-to-top a:focus {
+.back-to-top a:hover {
   text-decoration: underline;
-  color: #444;
 }
 
 /* ======================
