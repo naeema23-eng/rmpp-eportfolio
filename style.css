@@ -13,7 +13,9 @@
   --max-width: 1100px;
 }
 
-/* Reset & base */
+/* ======================
+   Reset & Base
+   ====================== */
 
 *,
 *::before,
@@ -231,40 +233,6 @@ li {
 }
 
 /* ======================
-   Local page navigation
-   ====================== */
-
-.local-nav {
-  margin-bottom: 1.5rem;
-}
-
-.horizontal-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 0.75rem 0 0.25rem;
-  padding: 0;
-  list-style: none;
-}
-
-.horizontal-links li a {
-  font-size: 0.9rem;
-  text-decoration: none;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background-color: #f9f4ec;
-  color: #444;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
-}
-
-.horizontal-links li a:hover,
-.horizontal-links li a:focus {
-  background-color: #f1e5d4;
-  border-color: rgba(0, 0, 0, 0.18);
-}
-
-/* ======================
    Back to top
    ====================== */
 
@@ -297,7 +265,7 @@ li {
 }
 
 /* ======================
-   Unit 8 (HTML sections)
+   Unit Sections (Unit 8)
    ====================== */
 
 .unit-section {
@@ -313,7 +281,6 @@ li {
 .unit-header h2 {
   margin: 0 0 0.25rem;
   font-size: 1.55rem;
-  letter-spacing: 0.02em;
 }
 
 .unit-subtitle {
@@ -330,21 +297,15 @@ li {
   margin-top: 1.5rem;
 }
 
-.content-block h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
-}
-
 .sub-block {
   margin-top: 1.1rem;
   padding-left: 0.75rem;
   border-left: 3px solid rgba(201, 169, 124, 0.35);
 }
 
-.sub-block h4 {
-  margin: 0 0 0.4rem;
-  font-size: 1.05rem;
-}
+/* ======================
+   Reflection Grid
+   ====================== */
 
 .reflection-grid {
   display: grid;
@@ -357,21 +318,12 @@ li {
   background: #faf6ef;
   border: 1px solid var(--border-soft);
   border-radius: 12px;
-  padding: 14px 14px;
+  padding: 14px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.03);
 }
 
-.reflection-item h4 {
-  margin: 0 0 0.4rem;
-  font-size: 1.05rem;
-}
-
-.outcomes-list {
-  margin: 0.5rem 0 0;
-}
-
 /* ======================
-   Unit 8 Evidence Gallery
+   Evidence Gallery
    ====================== */
 
 .evidence-gallery {
@@ -393,7 +345,6 @@ li {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  display: block;
 }
 
 .evidence-item figcaption {
@@ -405,4 +356,73 @@ li {
 
 .evidence-item.full-width {
   grid-column: 1 / -1;
+}
+
+/* ======================
+   Tables – Global A+ Style
+   ====================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0 1.5rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+}
+
+thead {
+  background-color: #f1e5d4;
+}
+
+thead th {
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  color: #4a3a26;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: #faf6ef;
+}
+
+/* Responsive tables */
+
+@media (max-width: 600px) {
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    padding: 0.6rem;
+  }
+
+  tbody td {
+    border: none;
+    padding: 6px 0;
+  }
 }
