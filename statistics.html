@@ -28,9 +28,7 @@
     <main class="page-grid">
       <section>
 
-        <!-- ======================
-             UNIT 6
-        ====================== -->
+        <!-- UNIT 6 -->
         <div class="card" id="unit6-descriptive">
           <div class="card-header">
             <h2 class="page-title">Unit 6 – Descriptive Statistics and Levels of Measurement</h2>
@@ -38,156 +36,342 @@
           </div>
 
           <p>
-            Unit 6 introduced quantitative methods for analysing numerical data, focusing on levels of measurement
-            and descriptive statistics. Measures of location and spread provide essential insight into typical values
-            and variability, forming the foundation for inferential analysis.
+            Unit 6 introduced quantitative methods as a way of examining relationships between variables that are measured
+            numerically and organised into datasets. A dataset can be thought of as a table where each row represents an
+            observation and each column represents a variable of interest. Before selecting any analytical method, it is
+            essential to understand the <strong>level of measurement</strong> of each variable—nominal, ordinal, interval
+            or ratio—as this determines which statistical techniques are valid.
+          </p>
+
+          <p>
+            The focus of this unit was on <strong>descriptive statistics</strong>. Measures of location, such as the mean
+            and median, describe a “typical” observation, while measures of spread, such as the range, variance and standard
+            deviation, provide insight into the variability or stability of the data. These concepts form the foundation for
+            later inferential techniques.
+          </p>
+
+          <p>
+            In relation to my project on predicting patient deterioration in ambulance settings, descriptive statistics are
+            crucial for understanding the baseline characteristics of physiological data. For example, summarising typical
+            heart rate or blood pressure values for stable vs. deteriorating patients helps identify early differences and
+            potential predictive markers. Examining the spread of values also reveals patterns, outliers and inconsistencies
+            that may affect model performance.
+          </p>
+
+          <p>
+            This unit reinforced that effective quantitative research begins with clean data, correct understanding of
+            measurement levels, and careful descriptive analysis before advancing to more complex modelling.
           </p>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- ======================
-             UNIT 7
-        ====================== -->
+        <!-- UNIT 7 -->
         <div class="card" id="unit7-inferential">
           <div class="card-header">
-            <h2 class="page-title">Unit 7 – Inferential Statistics &amp; Hypothesis Testing</h2>
-            <div class="meta small-muted">Unit 7 · Inference and hypothesis testing</div>
+            <h2 class="page-title">Unit 7 – Inferential Statistics &amp; Hypothesis Testing (Worksheets)</h2>
+            <div class="meta small-muted">Unit 7 · Inference, probability, hypothesis tests</div>
           </div>
 
           <p>
-            Unit 7 focused on inferential statistics, enabling conclusions about populations to be drawn from samples
-            while accounting for uncertainty through probability and hypothesis testing.
+            Unit 7 introduced inferential statistics as the process of making evidence-based conclusions about a population
+            using a sample, while recognising uncertainty and quantifying it using probability. The main practical focus was
+            applying hypothesis testing to determine whether observed differences are likely to reflect real effects rather
+            than random variation.
           </p>
+
+          <p class="section-label">Completed worksheet outputs (Unit 7.1 + 7.2)</p>
+
+          <!-- Dataset B -->
+          <div class="card" id="unit7-dataset-b">
+            <div class="card-header">
+              <h3>Dataset B – Diets (Summary Measures + t-test)</h3>
+              <div class="meta small-muted">Weight loss comparison: Diet A vs Diet B</div>
+            </div>
+
+            <ul>
+              <li><strong>Diet B mean:</strong> 3.710</li>
+              <li><strong>Diet B standard deviation:</strong> 2.769041999</li>
+              <li><strong>Diet B median:</strong> 3.745</li>
+              <li><strong>Diet B min / max:</strong> -4.148 / 10.539</li>
+              <li><strong>Q1 / Q3:</strong> 1.953 / 5.4035</li>
+              <li><strong>IQR:</strong> 3.4505</li>
+            </ul>
+
+            <p class="section-label">Hypothesis testing</p>
+            <ul>
+              <li><strong>Variance check (F-test p-value):</strong> 0.539902956</li>
+              <li><strong>Two-sample t-test (equal variances) p-value:</strong> 0.002751544</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> Diet B shows a moderate average weight loss with noticeable variability (including some
+              weight gain). The t-test result (p &lt; 0.05) indicates a statistically significant difference in mean weight loss between Diet A and Diet B.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
+
+          <!-- Dataset D -->
+          <div class="card" id="unit7-dataset-d">
+            <div class="card-header">
+              <h3>Dataset D – Brand Preferences (Frequencies)</h3>
+              <div class="meta small-muted">Nominal data summary: Brand A, Brand B, Other</div>
+            </div>
+
+            <ul>
+              <li><strong>Frequency of Brand A:</strong> 19</li>
+              <li><strong>Frequency of Brand B:</strong> 30</li>
+              <li><strong>Frequency of Other:</strong> 41</li>
+              <li><strong>Total responses:</strong> 90</li>
+              <li><strong>Example percentage (Brand A):</strong> 21.11111111%</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> “Other” brands are most frequently preferred, followed by Brand B, then Brand A.
+              Frequency summaries describe the pattern, but they do not on their own determine whether differences between groups are statistically significant.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
+
+          <!-- Dataset F -->
+          <div class="card" id="unit7-dataset-f">
+            <div class="card-header">
+              <h3>Dataset F – Designs (Paired t-test)</h3>
+              <div class="meta small-muted">Container Design 1 vs Design 2 across the same stores</div>
+            </div>
+
+            <ul>
+              <li><strong>Paired t-test p-value:</strong> 0.018335635</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> The paired t-test indicates a statistically significant difference between the two container
+              designs (p &lt; 0.05), suggesting design choice affects sales when comparing within the same stores.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
+
+          <!-- Dataset G -->
+          <div class="card" id="unit7-dataset-g">
+            <div class="card-header">
+              <h3>Dataset G – Filtration (Paired comparison)</h3>
+              <div class="meta small-muted">Agent 1 vs Agent 2 impurities across the same batches</div>
+            </div>
+
+            <ul>
+              <li><strong>p-value:</strong> 0.007545995</li>
+            </ul>
+
+            <p>
+              <strong>Interpretation:</strong> There is strong evidence that impurity levels differ between the two filtration agents (p &lt; 0.05).
+              Based on the sample, Agent 1 produces lower mean impurity levels.
+            </p>
+
+            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+          </div>
 
           <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
-        <!-- ======================
-             UNIT 8
-        ====================== -->
-        <div class="card" id="unit8-visualisation">
+        <!-- UNIT 8 -->
+        <div class="card" id="unit8-analysis">
           <div class="card-header">
             <h2 class="page-title">Unit 8 – Data Analysis and Visualisation</h2>
             <div class="meta small-muted">Unit 8 · Charts, distributions, and ethical data presentation</div>
           </div>
 
-          <section id="unit-8" class="unit-section">
+          <h3>Overview</h3>
+          <p>
+            Unit 8 focused on analysing and presenting quantitative data using appropriate visualisation techniques,
+            while also developing an awareness of how data presentation can influence interpretation and decision-making.
+            Through a series of structured Excel exercises, I explored frequency distributions, percentage comparisons,
+            and histogram construction to identify patterns within datasets and communicate findings clearly and ethically.
+          </p>
 
-            <section class="content-block">
-              <h3>Overview</h3>
+          <h3>Interpretation of Frequency and Percentage Charts</h3>
+
+          <h4>Single-area frequency and percentage analysis (Exercise 8.1D)</h4>
+          <p>
+            The frequency and percentage charts for categories A, B, and Other provide a clear overview of distribution
+            within a single area. The charts show that the “Other” category dominates both in absolute frequency and relative
+            percentage, while categories A and B represent smaller but distinct proportions of the dataset.
+            Presenting both frequencies and percentages is essential, as frequencies show the raw scale of observations,
+            whereas percentages allow for proportional comparison independent of sample size.
+          </p>
+          <p>
+            This exercise highlights the importance of selecting the appropriate visual representation depending on the
+            analytical goal. While frequency charts are useful for understanding volume, percentage charts are more effective
+            when comparing relative importance between categories. Using both together avoids misinterpretation that could
+            arise if only one representation were presented.
+          </p>
+
+          <h4>Comparative analysis across areas and locations (Exercises 8.2D and 8.2E)</h4>
+          <p>
+            The clustered bar charts comparing Area 1 and Area 2, and Location A and Location B, demonstrate how visualisation
+            supports comparative analysis. In these charts, differences between categories become immediately apparent.
+            For example, some categories show higher frequencies in one area or location compared to another, indicating
+            potential contextual or environmental influences on the observed outcomes.
+          </p>
+          <p>
+            The percentage charts are particularly valuable in this context, as they normalise the data and allow meaningful
+            comparison even when total sample sizes differ between groups. Without percentage-based visualisation, conclusions
+            drawn from raw frequencies alone could be misleading. This reinforces the principle that data visualisation is not
+            merely decorative, but a critical analytical tool that shapes how findings are understood.
+          </p>
+
+          <h3>Histogram Analysis and Distribution Shape (Exercise 8.3B)</h3>
+          <p>
+            The histogram constructed for Diet A illustrates the distribution of weight loss values across defined class intervals.
+            By grouping the data into five equal-width classes and plotting relative frequency against class marks, the histogram reveals
+            the overall shape of the distribution. The results indicate that most observations fall within the middle class intervals,
+            with fewer values at the lower and upper extremes.
+          </p>
+          <p>
+            This pattern suggests a concentration of outcomes around moderate weight loss values, with limited extreme responses.
+            The histogram provides insights that would not be visible from summary statistics alone, such as the mean and standard deviation.
+            In particular, it allows assessment of skewness, spread, and clustering, which are essential for understanding variability and
+            potential outliers within the dataset.
+          </p>
+
+          <h3>Ethical Considerations in Data Visualisation</h3>
+          <p>
+            A key theme in Unit 8 was the ethical responsibility of the analyst when presenting data. Visualisations can be manipulated,
+            intentionally or unintentionally, through choices such as axis scaling, category inclusion, or selective reporting of results.
+            For example, including inappropriate categories (such as totals within frequency charts) or choosing misleading scales could
+            exaggerate or minimise apparent differences.
+          </p>
+          <p>
+            The case study discussion reinforced that even when data values are correct, presenting analyses in a way that supports only a
+            preferred conclusion undermines professional integrity. As a computing and data professional, it is essential to present results
+            transparently, acknowledge limitations, and avoid techniques that could mislead stakeholders. Ethical data visualisation is therefore
+            a fundamental component of responsible research practice.
+          </p>
+
+          <h3>Reflection (What? So What? Now What?)</h3>
+          <div class="reflection-grid">
+            <div class="reflection-item">
+              <h4>What?</h4>
               <p>
-                Unit 8 focused on analysing and presenting quantitative data using appropriate visualisation techniques.
-                Frequency charts, percentage charts, and histograms were used to identify patterns and communicate results
-                clearly and ethically.
+                In this unit, I learned how to construct and interpret frequency charts, percentage charts, and histograms, and how each type of
+                visualisation serves a different analytical purpose. I also developed practical skills in organising data into class intervals and
+                using relative frequencies to represent distributions accurately.
               </p>
-            </section>
+            </div>
 
-            <section class="content-block">
-              <h3>Interpretation of Frequency and Percentage Charts</h3>
-
-              <div class="sub-block">
-                <h4>Exercise 8.1D – Single-area analysis</h4>
-                <p>
-                  Frequency and percentage charts were used to summarise category distributions (A, B and Other).
-                  Percentages allowed proportional comparison, while frequencies showed absolute counts.
-                </p>
-              </div>
-
-              <div class="sub-block">
-                <h4>Exercises 8.2D and 8.2E – Comparative analysis</h4>
-                <p>
-                  Clustered bar charts enabled comparison across areas and locations, revealing contextual differences
-                  that could not be identified through aggregated data alone.
-                </p>
-              </div>
-            </section>
-
-            <!-- ===== Evidence Gallery ===== -->
-            <section class="content-block">
-              <h3>Evidence: Unit 8 Charts and Visual Outputs</h3>
-
-              <div class="evidence-gallery">
-
-                <figure class="evidence-item">
-                  <img src="assets/images/unit8_exe8_1_frequencies.png" alt="Exercise 8.1D Frequencies">
-                  <figcaption>Exercise 8.1D – Frequency distribution (A, B, Other)</figcaption>
-                </figure>
-
-                <figure class="evidence-item">
-                  <img src="assets/images/unit8_exe8_1_percentages.png" alt="Exercise 8.1D Percentages">
-                  <figcaption>Exercise 8.1D – Percentage distribution</figcaption>
-                </figure>
-
-                <figure class="evidence-item">
-                  <img src="assets/images/unit8_exe8_2D_frequencies.png" alt="Exercise 8.2D Frequencies">
-                  <figcaption>Exercise 8.2D – Area 1 vs Area 2 (Frequencies)</figcaption>
-                </figure>
-
-                <figure class="evidence-item">
-                  <img src="assets/images/unit8_exe8_2D_percentages.png" alt="Exercise 8.2D Percentages">
-                  <figcaption>Exercise 8.2D – Area 1 vs Area 2 (Percentages)</figcaption>
-                </figure>
-
-                <figure class="evidence-item">
-                  <img src="assets/images/unit8_exe8_2E_frequencies.png" alt="Exercise 8.2E Frequencies">
-                  <figcaption>Exercise 8.2E – Location A vs Location B (Frequencies)</figcaption>
-                </figure>
-
-                <figure class="evidence-item">
-                  <img src="assets/images/unit8_exe8_2E_percentages.png" alt="Exercise 8.2E Percentages">
-                  <figcaption>Exercise 8.2E – Location A vs Location B (Percentages)</figcaption>
-                </figure>
-
-                <figure class="evidence-item full-width">
-                  <img src="assets/images/unit8_exe8_3B_histogram.png" alt="Exercise 8.3B Histogram">
-                  <figcaption>Exercise 8.3B – Histogram of weight loss distribution (Diet A)</figcaption>
-                </figure>
-
-              </div>
-            </section>
-
-            <section class="content-block">
-              <h3>Ethical Considerations</h3>
+            <div class="reflection-item">
+              <h4>So what?</h4>
               <p>
-                This unit emphasised the ethical responsibility of analysts to avoid misleading visualisations.
-                Choices related to scaling, categorisation, and presentation directly influence interpretation
-                and must be handled transparently.
+                These skills are critical because visualisation directly influences how results are perceived and interpreted. Poorly chosen or
+                misleading charts can distort understanding, while well-designed visualisations support clear, evidence-based decision-making.
+                The unit also strengthened my awareness of ethical considerations in data analysis, particularly the responsibility to present
+                findings honestly and contextually.
               </p>
-            </section>
+            </div>
 
-            <section class="content-block">
-              <h3>Reflection (What? So What? Now What?)</h3>
+            <div class="reflection-item">
+              <h4>Now what?</h4>
+              <p>
+                Going forward, I will apply these principles in my MSc research project by carefully selecting visualisation techniques that align
+                with the nature of the data and the research questions. I will ensure that charts are used to clarify, rather than manipulate,
+                findings, and that both statistical results and their limitations are communicated transparently. These skills will also be directly
+                applicable in professional contexts where data-driven decisions must be justified clearly and ethically.
+              </p>
+            </div>
+          </div>
 
-              <div class="reflection-grid">
-                <div class="reflection-item">
-                  <h4>What?</h4>
-                  <p>I learned how to construct and interpret frequency charts, percentage charts, and histograms.</p>
-                </div>
+          <h3>Learning Outcomes Addressed</h3>
+          <ul class="outcomes-list">
+            <li>Evaluation of data analysis processes through appropriate visualisation techniques</li>
+            <li>Critical interpretation of quantitative results</li>
+            <li>Application of ethical and professional judgement in data presentation</li>
+          </ul>
 
-                <div class="reflection-item">
-                  <h4>So what?</h4>
-                  <p>Effective visualisation supports accurate interpretation and evidence-based decision-making.</p>
-                </div>
+          <h3 class="section-label">Evidence: Unit 8 Charts and Visual Outputs</h3>
 
-                <div class="reflection-item">
-                  <h4>Now what?</h4>
-                  <p>I will apply these principles in my MSc project and professional practice.</p>
-                </div>
-              </div>
-            </section>
+          <div class="evidence-grid">
+            <figure class="evidence-card">
+              <figcaption class="evidence-title">Exercise 8.1D Frequencies</figcaption>
+              <a class="evidence-link" href="assets/images/unit8_exe8_1_frequencies.png" target="_blank" rel="noopener">
+                <img src="assets/images/unit8_exe8_1_frequencies.png" alt="Exercise 8.1D Frequency distribution (A, B, Other)">
+              </a>
+              <p class="evidence-caption">Exercise 8.1D – Frequency distribution (A, B, Other)</p>
+            </figure>
 
-            <section class="content-block">
-              <h3>Learning Outcomes Addressed</h3>
-              <ul class="outcomes-list">
-                <li>Evaluation of data analysis processes</li>
-                <li>Critical interpretation of quantitative results</li>
-                <li>Ethical and professional judgement in data presentation</li>
-              </ul>
-            </section>
+            <figure class="evidence-card">
+              <figcaption class="evidence-title">Exercise 8.1D Percentages</figcaption>
+              <a class="evidence-link" href="assets/images/unit8_exe8_1_percentages.png" target="_blank" rel="noopener">
+                <img src="assets/images/unit8_exe8_1_percentages.png" alt="Exercise 8.1D Percentage distribution (A, B, Other)">
+              </a>
+              <p class="evidence-caption">Exercise 8.1D – Percentage distribution</p>
+            </figure>
 
-            <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
-          </section>
+            <figure class="evidence-card">
+              <figcaption class="evidence-title">Exercise 8.2D Frequencies</figcaption>
+              <a class="evidence-link" href="assets/images/unit8_exe8_2D_frequencies.png" target="_blank" rel="noopener">
+                <img src="assets/images/unit8_exe8_2D_frequencies.png" alt="Exercise 8.2D – Area 1 vs Area 2 (Frequencies)">
+              </a>
+              <p class="evidence-caption">Exercise 8.2D – Area 1 vs Area 2 (Frequencies)</p>
+            </figure>
+
+            <figure class="evidence-card">
+              <figcaption class="evidence-title">Exercise 8.2D Percentages</figcaption>
+              <a class="evidence-link" href="assets/images/unit8_exe8_2D_percentages.png" target="_blank" rel="noopener">
+                <img src="assets/images/unit8_exe8_2D_percentages.png" alt="Exercise 8.2D – Area 1 vs Area 2 (Percentages)">
+              </a>
+              <p class="evidence-caption">Exercise 8.2D – Area 1 vs Area 2 (Percentages)</p>
+            </figure>
+
+            <figure class="evidence-card">
+              <figcaption class="evidence-title">Exercise 8.2E Frequencies</figcaption>
+              <a class="evidence-link" href="assets/images/unit8_exe8_2E_frequencies.png" target="_blank" rel="noopener">
+                <img src="assets/images/unit8_exe8_2E_frequencies.png" alt="Exercise 8.2E – Location A vs Location B (Frequencies)">
+              </a>
+              <p class="evidence-caption">Exercise 8.2E – Location A vs Location B (Frequencies)</p>
+            </figure>
+
+            <figure class="evidence-card">
+              <figcaption class="evidence-title">Exercise 8.2E Percentages</figcaption>
+              <a class="evidence-link" href="assets/images/unit8_exe8_2E_percentages.png" target="_blank" rel="noopener">
+                <img src="assets/images/unit8_exe8_2E_percentages.png" alt="Exercise 8.2E – Location A vs Location B (Percentages)">
+              </a>
+              <p class="evidence-caption">Exercise 8.2E – Location A vs Location B (Percentages)</p>
+            </figure>
+
+            <figure class="evidence-card evidence-wide">
+              <figcaption class="evidence-title">Exercise 8.3B Histogram</figcaption>
+              <a class="evidence-link" href="assets/images/unit8_exe8_3B_histogram.png" target="_blank" rel="noopener">
+                <img src="assets/images/unit8_exe8_3B_histogram.png" alt="Exercise 8.3B – Histogram (Diet A weight loss)">
+              </a>
+              <p class="evidence-caption">Exercise 8.3B – Histogram (Diet A)</p>
+            </figure>
+          </div>
+
+          <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+        </div>
+
+        <!-- UNIT 9 placeholder (keep for next) -->
+        <div class="card" id="charts-example">
+          <div class="card-header">
+            <h2>Charts Example Worksheet (Unit 9)</h2>
+            <div class="meta small-muted">Unit 9 · Visualising data and communicating results</div>
+          </div>
+
+          <p>
+            The Unit 9 charts example will emphasise choosing appropriate visualisations and explaining results to
+            non-specialist audiences. This section is reserved for that activity.
+          </p>
+
+          <p class="section-label">Planned coverage</p>
+          <ul>
+            <li>Which chart types I used (for example, bar charts, boxplots, histograms)</li>
+            <li>Why these were suitable for the variables and research question</li>
+            <li>How I would explain the charts and results in clear, simple language</li>
+          </ul>
+
+          <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
         </div>
 
       </section>
@@ -200,7 +384,20 @@
           <ul class="clean">
             <li><a href="#unit6-descriptive">Unit 6</a></li>
             <li><a href="#unit7-inferential">Unit 7</a></li>
-            <li><a href="#unit8-visualisation">Unit 8</a></li>
+            <li><a href="#unit8-analysis">Unit 8</a></li>
+            <li><a href="#charts-example">Unit 9</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Skills highlighted</h3>
+          </div>
+          <ul class="clean">
+            <li><span class="tag-pill">Analysis</span>Thinking statistically about data in research</li>
+            <li><span class="tag-pill">Tools</span>Using software outputs as evidence</li>
+            <li><span class="tag-pill">Visualisation</span>Communicating findings with appropriate charts</li>
+            <li><span class="tag-pill">Interpretation</span>Connecting numerical results to real-world questions</li>
           </ul>
         </div>
       </aside>
