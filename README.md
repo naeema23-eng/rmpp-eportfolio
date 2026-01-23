@@ -68,7 +68,7 @@ The portfolio includes evidence for all required module components, including:
 - **Collaborative Discussion 1 (Units 1–3)**  
   Initial post, three peer responses, and summary post (ACM/BCS ethics case study).
 
-- **Collaborative Discussion 2 (Units 9–11)**  
+- **Collaborative Discussion 2 (Units 7–9)**  
   Initial post, peer responses, and summary on accuracy of information and statistical ethics.
 
 - **Reflective Activities**
