@@ -112,11 +112,24 @@ nav.main-nav a.active {
   grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
   gap: 18px;
   margin-top: 24px;
+  align-items: start;
 }
 
-@media (max-width: 800px) {
+/* Sidebar stays visible while scrolling on desktop */
+@media (min-width: 901px) {
+  .sidebar {
+    position: sticky;
+    top: 18px;
+    align-self: start;
+  }
+}
+
+@media (max-width: 900px) {
   .page-grid {
     grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
   }
 }
 
@@ -167,7 +180,7 @@ h2.page-title {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.65;
   margin: 0.5rem 0 1rem;
 }
 
@@ -186,12 +199,20 @@ li {
 }
 
 .section-label {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-muted);
   margin-top: 1.2rem;
+}
+
+/* For references list */
+.refs {
+  padding-left: 1.2rem;
+}
+.refs li {
+  margin-bottom: 0.6rem;
 }
 
 /* ======================
@@ -247,7 +268,7 @@ tbody tr:last-child td {
 }
 
 .sidebar .card ul.clean li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .sidebar .card ul.clean a {
@@ -260,8 +281,12 @@ tbody tr:last-child td {
   text-decoration: underline;
 }
 
-/* Tag pills */
+.sidebar code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.85em;
+}
 
+/* Tag pills */
 .tag-pill {
   display: inline-block;
   padding: 2px 8px;
@@ -269,12 +294,13 @@ tbody tr:last-child td {
   border-radius: 999px;
   background: var(--accent-soft);
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #5a4630;
+  vertical-align: middle;
 }
 
 /* ======================
-   Unit 8 Evidence Gallery
+   Evidence gallery + images
    ====================== */
 
 .evidence-grid {
@@ -311,11 +337,17 @@ tbody tr:last-child td {
   color: #3b2f22;
 }
 
+.evidence-link {
+  display: block;
+  text-decoration: none;
+}
+
 .evidence-card img {
   width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
+  background: #ffffff;
 }
 
 .evidence-caption {
@@ -326,12 +358,6 @@ tbody tr:last-child td {
 
 .evidence-wide {
   grid-column: 1 / -1;
-}
-
-/* Larger histogram */
-.evidence-img-large {
-  max-height: 520px;
-  object-fit: contain;
 }
 
 /* ======================
